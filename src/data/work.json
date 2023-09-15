@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Gridserve",
+    "type": "Innovative Sustainable Energy Company",
+    "info": "GRIDSERVE is a sustainable energy company focused on achieving net-zero transport through solar-powered EV charging networks and car leasing while utilizing a proprietary data platform.",
+    "tags": ["WordPress", "JavaScript"],
+    "links": [
+      {
+        "website": "https://www.gridserve.com/"
+      }
+    ],
+    "img": "/gridServe.png"
+  },
+  {
+    "name": "Career Institute",
+    "type": "Leading IT Training",
+    "info": "Career Institute is a pioneering institution committed to delivering quality education and professional training to bridge the industry gap for both local and international markets, preparing students for future career success.",
+    "tags": ["HTML", "CSS", "Bootstrap 5", "JavaScript"],
+    "links": [
+      {
+        "website": "https://career.edu.pk/"
+      }
+    ],
+    "img": "/careerInstitute.png"
+  },
+  {
+    "name": "Seller Count",
+    "type": "Ads and finance",
+    "info": "Sellercount is the first and largest searchable database of TikTok ads. Without having to spend all your time looking for a product.",
+    "tags": ["Tailwind", "Javascript", "Low-Code", "Animations"],
+    "links": [
+      {
+        "website": "https://sellercount.com/"
+      }
+    ],
+    "img": "/sellerCount.png"
+  }
+]

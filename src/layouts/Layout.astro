@@ -1,0 +1,87 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farhan – Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@500;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- https://fffuel.co/nnnoise/ -->
+  <body class="bg-black-500 bg-noise font-medium">
+    <main
+      class="global-grid max-w-[1200px] mx-auto px-24 md:px-32 lg:px-48 xl:px-0 text-white"
+    >
+      <Header />
+      <slot />
+      <Footer />
+    </main>
+    <script
+      src="https://kit.fontawesome.com/7e4584581a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    a:not(.not-fancy) {
+      @apply text-yellow-500 pb-4;
+    }
+    a:focus {
+      @apply outline-dashed outline-2 outline-white outline-offset-2;
+    }
+    a:hover:not(.not-fancy) {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fad161' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: 0 100%;
+      background-size: auto 4px;
+      background-repeat: repeat-x;
+      text-decoration: none;
+    }
+  }
+
+  @layer components {
+    .global-grid {
+      @apply grid grid-cols-2 gap-16 md:grid-cols-4 md:gap-24 lg:grid-cols-12;
+    }
+    .not-fancy {
+      @apply hover:text-yellow-500 transition-all duration-300;
+    }
+    .button {
+      @apply inline-block py-16 px-24 rounded-12 border-2 border-yellow-500 uppercase text-white text-16 leading-link font-extrabold;
+    }
+    .button:hover {
+      @apply bg-yellow-500 text-black-500 transition-all duration-300;
+    }
+    .tab {
+      @apply text-14 leading-normal text-black-400 py-16 px-24 shrink-0 relative after:w-full after:h-[2px] after:absolute after:left-0 after:bottom-0 after:bg-black-400 hover:text-yellow-500 hover:after:bg-yellow-500 transition-all duration-300 md:shrink md:w-full md:text-center lg:after:w-[2px] lg:after:h-full lg:text-left lg:py-8;
+    }
+  }
+
+  @layer utilities {
+    .subtext {
+      @apply font-handwriting uppercase tracking-wide leading-heading;
+    }
+    .tab.tab-active {
+      @apply text-white after:bg-white after:rounded-full;
+    }
+  }
+</style>

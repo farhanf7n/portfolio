@@ -1,0 +1,62 @@
+---
+import Button from "./Button.astro";
+import Resume from "/farhan_resume.pdf";
+---
+
+<footer
+  class="col-span-full global-grid py-48 space-y-64 md:py-96 xl:pt-0 xl:pb-160"
+>
+  <div
+    class="col-span-full space-y-24 flex flex-col items-center text-center lg:col-start-4 lg:col-end-10"
+  >
+    <p class="subtext text-12 md:text-16">
+      I tried sneaking in my resume on the website but couldn&apos;t find a cool
+      place so yeah...
+    </p>
+    <Button
+      text="Resume 🤓"
+      href={Resume}
+      target="_blank"
+      classes="bg-white text-black-500 border-white hover:border-yellow-500"
+    />
+  </div>
+
+  <div
+    class="col-span-full flex flex-col items-center space-y-24 lg:col-start-4 lg:col-end-10"
+  >
+    <span class="text-center text-12 md:text-14">
+      Designed and built with ❤️ (and <a
+        href="https://astro.build/"
+        target="_blank">Astro</a
+      >) by&nbsp;Farhan
+    </span>
+  </div>
+</footer>
+
+<style is:global>
+  .tooltip {
+    position: relative;
+  }
+
+  .tooltip-text {
+    font-size: 1.2rem;
+    width: max-content;
+
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 90%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    transition: bottom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.3s;
+  }
+
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    bottom: 150%;
+  }
+</style>

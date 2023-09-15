@@ -1,0 +1,62 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<section
+  class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 col-span-full py-48 space-y-16 lg:space-y-24"
+>
+  <div class="col-span-full space-y-4 lg:space-y-8 leading-heading">
+    <p class="subtext text-14 md:text-20 lg:text-24">hey! my name is</p>
+    <h1 class="text-32 md:text-56 lg:text-64 font-black font-sans uppercase">
+      farhan - /forhan/
+    </h1>
+  </div>
+  <div
+    class="col-span-full space-y-4 lg:space-y-8 mb-32 leading-heading h-[150px] lg:h-auto"
+  >
+    <p class="subtext text-14 md:text-20 lg:text-24">
+      and i&rsquo;m your friendly neighborhood
+    </p>
+    <h1
+      class="text-32 md:text-56 lg:text-64 font-black font-sans uppercase bottom"
+      id="text"
+    >
+      &lt;<span></span>
+    </h1>
+  </div>
+  <p class="col-span-9 leading-normal text-16 md:text-18 lg:text-20">
+    I&apos;m mainly a Frontend Engineer that is passionate about three things:
+    content designing, designing and engineering...and gaming. Currently,
+    I&apos;m focused on building simpler, faster, friendlier frontend at <a
+      href="https://www.moonbox.ae/"
+      target="_blank"
+      class=""
+    >
+      Moonbox</a
+    >.
+  </p>
+  <div class="col-span-full">
+    <Button
+      href="#work"
+      text="my work 👨‍💻"
+      classes="justify-self-start mt-16 md:mt-32 md:mt-48"
+    />
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { TextPlugin } from "gsap/TextPlugin";
+
+  gsap.registerPlugin(TextPlugin);
+  const words = ["frontend engineer/>", "ui/ux designer/>", "gamer/>"];
+  let masterTl = gsap.timeline({ repeat: -1, ease: "power2.inOut" });
+  words.forEach((word) => {
+    let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 0.75 });
+    tl.to("#text span", {
+      duration: 1.5,
+      text: word,
+    });
+    masterTl.add(tl);
+  });
+</script>

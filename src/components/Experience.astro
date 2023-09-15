@@ -1,0 +1,116 @@
+---
+import jobs from "../data/jobs.json";
+import moment from "moment";
+import "moment-precise-range-plugin";
+---
+
+<section id="jobs" class="col-span-full global-grid py-48 md:py-96 lg:py-160 space-y-24 lg:space-y-48">
+  <header class="col-span-full space-y-4 lg:space-y-8 leading-heading xl:col-start-3 xl:col-end-11">
+    <p class="subtext text-14 md:text-16 lg:text-18">what&apos;s your work exp like?</p>
+    <h1 class="text-32 md:text-48 lg:text-56 font-black font-sans uppercase" id="heading">&lt;work/&gt; experience</h1>
+  </header>
+
+  <div class="col-span-full global-grid">
+    <div class="col-span-full flex overflow-scroll pb-16 mb-24 lg:col-span-2 lg:flex-col xl:col-start-3 xl:col-end-5">
+      {
+        jobs.map((job) => {
+          return (
+            <button id={`#${job.id}`} class={`not-fancy tab ${job.defaultActive && "tab-active"}`}>
+              <h2>{job.company}</h2>
+            </button>
+          );
+        })
+      }
+    </div>
+
+    <div class="col-span-full lg:col-span-8 xl:col-start-5 xl:col-end-11">
+      {
+        jobs.map((job) => {
+          const startDateFormatted = moment(job.startDate).format("MMM YYYY");
+          const endDateFormatted = () => {
+            if (job.endDate === "Present") {
+              return moment().format("MMM YYYY");
+            } else {
+              return moment(job.endDate).format("MMM YYYY");
+            }
+          };
+          const duration = () => {
+            return moment.preciseDiff(startDateFormatted, endDateFormatted());
+          };
+
+          return (
+            <div
+              id={job.id}
+              class={`leading-normal space-y-24 tab-content-item ${job.defaultActive && "tab-content-item-active"}`}
+            >
+              <div class="space-y-4">
+                <h3 class="text-18 md:text-20">
+                  {job.position}{" "}
+                  <a href={job.website} target="_blank" class="font-extrabold not-fancy">
+                    @ {job.companyFull}
+                  </a>
+                </h3>
+                <p class="text-14 text-black-300">
+                  {startDateFormatted} &ndash; {job.endDate === "Present" ? "Present" : endDateFormatted} • {duration}
+                </p>
+              </div>
+              <ul class="space-y-16 text-16">
+                {job.accomplished.map((value) => {
+                  return (
+                    <div class="flex space-x-4">
+                      <span class="fa-solid fa-caret-right py-4 px-8" />
+                      <li>{value}</li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  const tab = document.querySelectorAll(".tab");
+  const tabContentItem = document.querySelectorAll(".tab-content-item");
+  const tabContentItemActive = document.querySelector(".tab-content-item-active");
+
+  tabContentItem.forEach((e) => {
+    e.classList.add("hidden");
+  });
+
+  function getTabContent() {
+    tab.forEach((e) => [
+      e.addEventListener("click", () => {
+        const tabId = e.getAttribute("id").split("#")[1];
+
+        tab.forEach((e) => {
+          e.classList.remove("tab-active");
+        });
+        tabContentItem.forEach((e) => {
+          e.classList.add("hidden");
+        });
+        e.classList.toggle("tab-active");
+
+        if (e.classList.contains("tab-active")) {
+          tabContentItem.forEach((e) => {
+            e.classList.add("hidden");
+          });
+        }
+
+        tabContentItem.forEach((e) => {
+          if (tabId === e.id) {
+            e.classList.toggle("hidden");
+          }
+        });
+      }),
+    ]);
+
+    if (tabContentItemActive) {
+      tabContentItemActive.classList.remove("hidden");
+    }
+  }
+  getTabContent();
+</script>

@@ -1,0 +1,12 @@
+---
+export interface IButtonProps extends HTMLAnchorElement {
+  text: string;
+  classes?: string;
+}
+
+const { text, classes = "", ...nativeProps } = Astro.props as IButtonProps;
+---
+
+<a class={`not-fancy button ${classes}`} {...nativeProps}>
+  {text}
+</a>

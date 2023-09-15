@@ -1,0 +1,80 @@
+---
+import Button from "./Button.astro";
+---
+
+<header class="col-span-full py-24 md:py-32 lg:py-48">
+  <nav
+    class="relative font-sans font-extrabold flex justify-between items-center leading-link"
+  >
+    <div class="text-16">FARHAN</div>
+    <div class="text-24 block lg:hidden">
+      <button id="hamburger-icon">
+        <i class="fa-solid fa-burger"></i>
+      </button>
+      <button class="hidden" id="close-icon">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="text-16 hidden lg:flex items-center uppercase space-x-32">
+      <li><a href="#about" class="not-fancy">about</a></li>
+      <li><a href="#jobs" class="not-fancy">experience</a></li>
+      <li><a href="#work" class="not-fancy">work</a></li>
+      <li>
+        <Button
+          text="say hey 👋"
+          href="mailto:farhanf7n@gmail.com"
+          target="_blank"
+        />
+      </li>
+    </ul>
+  </nav>
+  <ul
+    class="col-span-full bg-black-50 bg-noise absolute top-64 right-24 bottom-0 left-24 py-48 space-y-32 font-extrabold text-24 uppercase hidden lg:hidden"
+    id="navigation-list"
+  >
+    <li class="navigation-item">
+      <a href="#about" class="not-fancy">about</a>
+    </li>
+    <li class="navigation-item">
+      <a href="#jobs" class="not-fancy">experience</a>
+    </li>
+    <li class="navigation-item">
+      <a href="#work" class="not-fancy">projects</a>
+    </li>
+    <li class="navigation-item">
+      <Button
+        text="say hey 👋"
+        href="mailto:farhanf7n@gmail.com"
+        target="_blank"
+        classes="mt-32"
+      />
+    </li>
+  </ul>
+</header>
+
+<script>
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+  const navigationList = document.getElementById("navigation-list");
+  const navigationItem = document.querySelectorAll(".navigation-item");
+
+  hamburgerIcon.addEventListener("click", () => {
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+    navigationList.classList.toggle("hidden");
+  });
+
+  closeIcon.addEventListener("click", () => {
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+    navigationList.classList.toggle("hidden");
+  });
+
+  navigationItem.forEach((e) => {
+    e.addEventListener("click", () => {
+      hamburgerIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+      navigationList.classList.toggle("hidden");
+    });
+  });
+</script>

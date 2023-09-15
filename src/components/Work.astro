@@ -1,0 +1,73 @@
+---
+import work from "../data/work.json";
+---
+
+<section
+  id="work"
+  class="col-span-full global-grid py-48 md:py-96 lg:py-160 space-y-24 lg:space-y-48"
+>
+  <header class="col-span-full space-y-4 lg:space-y-8 leading-heading">
+    <p class="subtext text-14 md:text-16 lg:text-18">
+      can I see your projects?
+    </p>
+    <h1 class="text-32 md:text-48 lg:text-56 font-black font-sans uppercase">
+      stuff I&apos;ve &lt;built/&gt;
+    </h1>
+  </header>
+
+  <div class="col-span-full space-y-48 md:space-y-64">
+    {
+      work.map((work) => {
+        return (
+          <div class="space-y-24 items-center flex flex-col lg:flex-row lg:even:flex-row-reverse relative">
+            <img
+              src={work.img}
+              alt="project image"
+              class="shadow-2xl rounded-12 md:rounded-24 saturate-0 transition-all duration-200 ease-in-out hover:saturate-100 lg:h-[430px] lg:w-[590px] lg:object-cover"
+            />
+            <div class="space-y-24 md:w-3/4 md:self-start lg:p-64">
+              <div class="leading-heading space-y-4">
+                <span class="subtext text-14 md:text-16">{work.type}</span>
+
+                {work.links.map((link) => {
+                  return (
+                    <a
+                      href={link.website}
+                      target="_blank"
+                      class="not-fancy block"
+                    >
+                      <h2 class="text-24 md:text-32 font-black xl:w-4/6">
+                        {work.name}
+                      </h2>
+                    </a>
+                  );
+                })}
+              </div>
+              <p class="text-16 leading-normal">{work.info}</p>
+
+              <div class="text-black-200 text-14 leading-normal space-x-16">
+                {work.tags.map((tag) => {
+                  return <span>{tag}</span>;
+                })}
+              </div>
+
+              {work.links.map((link) => {
+                return (
+                  <div class="space-x-16">
+                    {link.website && (
+                      <a
+                        href={link.website}
+                        target="_blank"
+                        class="fa-solid fa-up-right-from-square text-16"
+                      />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
