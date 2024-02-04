@@ -1,5 +1,19 @@
 [
   {
+    "name": "Figma File",
+    "type": "I make designs everyday",
+    "info": "Recently i switched to UI/UX designing and i make designs everyday. After that i upload them on my Twitter and Dribbble. I have a lot of figma files that i can show you. Just let me know and i will share the link with you.",
+    "tags": ["Figma", "UI/UX Designing"],
+    "links": [
+      {
+        "dribbble": "https://dribbble.com/farhanf7n",
+        "twitter": "https://twitter.com/forhaned",
+        "figma": "https://www.figma.com/file/H8KBLQWNcR1s9cBx0SXrbw/Designs---2024?type=design&node-id=0%3A1&mode=design&t=ZCNSl1J6HCCH7kHY-1"
+      }
+    ],
+    "img": "/FigmaThumbnail.png"
+  },
+  {
     "name": "Gridserve",
     "type": "Innovative Sustainable Energy Company",
     "info": "GRIDSERVE is a sustainable energy company focused on achieving net-zero transport through solar-powered EV charging networks and car leasing while utilizing a proprietary data platform.",
