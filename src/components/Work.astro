@@ -61,6 +61,34 @@ import work from "../data/work.json";
                         class="fa-solid fa-up-right-from-square text-16"
                       />
                     )}
+                    {link.twitter && (
+                      <a
+                        href={link.twitter}
+                        target="_blank"
+                        class="fa-brands fa-x-twitter text-16"
+                      />
+                    )}
+                    {link.behance && (
+                      <a
+                        href={link.behance}
+                        target="_blank"
+                        class="fa-brands fa-behance text-16"
+                      />
+                    )}
+                    {link.figma && (
+                      <a
+                        href={link.figma}
+                        target="_blank"
+                        class="fa-brands fa-figma text-16"
+                      />
+                    )}
+                    {link.dribbble && (
+                      <a
+                        href={link.dribbble}
+                        target="_blank"
+                        class="fa-brands fa-dribbble text-16"
+                      />
+                    )}
                   </div>
                 );
               })}
