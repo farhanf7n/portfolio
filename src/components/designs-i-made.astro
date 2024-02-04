@@ -1,0 +1,91 @@
+---
+import designsImade from "../data/designs-i-made.json";
+---
+
+<section
+  class="col-span-full global-grid py-48 space-y-24 md:py-96 lg:space-y-48 xl:py-160"
+>
+  <header
+    class="col-span-full space-y-4 lg:space-y-8 leading-heading xl:flex xl:flex-col xl:items-center"
+  >
+    <p class="subtext text-14 md:text-16 lg:text-18">any ui designs?</p>
+    <h1 class="text-32 md:text-48 lg:text-56 font-black font-sans uppercase">
+      &lt;ui/&gt; designs
+    </h1>
+  </header>
+
+  <div class="col-span-full global-grid">
+    {
+      designsImade.map((h) => {
+        return (
+          <div
+            class={`col-span-full leading-normal p-24 space-y-24 border-2 rounded-24 md:space-y-32 md:py-24 md:px-32 md:col-span-2 lg:col-span-4 md:grid lg:hover:scale-[1.03] lg:transition-all lg:ease-out ${
+              h.featured ? "border-yellow-500" : "border-black-400"
+            }`}
+          >
+            {h.links.map((link) => {
+              return (
+                <div class="space-x-16 text-right">
+                  {link.website && (
+                    <a
+                      href={link.website}
+                      target="_blank"
+                      class="fa-solid fa-up-right-from-square text-16"
+                    />
+                  )}
+                  {link.twitter && (
+                    <a
+                      href={link.twitter}
+                      target="_blank"
+                      class="fa-brands fa-x-twitter text-16"
+                    />
+                  )}
+                  {link.behance && (
+                    <a
+                      href={link.behance}
+                      target="_blank"
+                      class="fa-brands fa-behance text-16"
+                    />
+                  )}
+                  {link.figma && (
+                    <a
+                      href={link.figma}
+                      target="_blank"
+                      class="fa-brands fa-figma text-16"
+                    />
+                  )}
+                  {link.dribbble && (
+                    <a
+                      href={link.dribbble}
+                      target="_blank"
+                      class="fa-brands fa-dribbble text-16"
+                    />
+                  )}
+                </div>
+              );
+            })}
+
+            <div style="margin-top: 16px !important;">
+              <img
+                src={h.img}
+                alt="project image"
+                class="shadow-2xl rounded-12 md:rounded-24 saturate-0 transition-all duration-200 ease-in-out hover:saturate-100  lg:object-cover"
+              />
+              <h2 class="text-18 font-extrabold mt-16 md:text-20">{h.name}</h2>
+              <p class="text-16 text-black-50">{h.info}</p>
+            </div>
+
+            <div
+              class="text-black-300 text-14 md:self-end"
+              style="margin-top: 16px;"
+            >
+              {h.tags.map((tag) => {
+                return <span>{tag}</span>;
+              })}
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
