@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Job Search App",
+    "info": "App: Home page, job details, job application. Three frames for seamless navigation and efficient job browsing and application.",
+    "tags": ["Figma"],
+    "links": [
+      {
+        "dribbble": "https://dribbble.com/shots/23557987-Job-Searching-App?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Job%20Searching%20App&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Job%20Searching%20App&utm_medium=Social_Share"
+      }
+    ],
+    "img": "../public/job-searching-app.png",
+    "featured": true
+  },
+  {
+    "name": "Job Search App",
+    "info": "App: Home page, job details, job application. Three frames for seamless navigation and efficient job browsing and application.",
+    "tags": ["Figma"],
+    "links": [
+      {
+        "dribbble": "https://dribbble.com/shots/23557987-Job-Searching-App?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Job%20Searching%20App&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Job%20Searching%20App&utm_medium=Social_Share"
+      }
+    ],
+    "img": "../public/job-searching-app.png",
+    "featured": false
+  }
+]
