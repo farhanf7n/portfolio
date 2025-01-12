@@ -21,6 +21,12 @@ const config = {
       },
     },
     extend: {
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1', easing: 'circOut' },
+          '50%': { opacity: '0', easing: 'circOut' },
+        },
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -91,6 +97,9 @@ const config = {
         md: 'calc(var(--radius) - 2px)',
         lg: 'var(--radius)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      animation: {
+        blink: 'blink 1s infinite',
       },
     },
   },

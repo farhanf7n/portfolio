@@ -9,6 +9,7 @@ import { Toaster } from '@/components/toaster';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
+import { AnimatePresence } from 'framer-motion';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -35,7 +36,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body className={cn('min-h-screen font-sans', fonts)}>
         <ThemeProvider attribute="class">
           <ActiveSectionProvider>
-            {children}
+            <AnimatePresence>{children}</AnimatePresence>
             <Toaster position="bottom-left" />
           </ActiveSectionProvider>
         </ThemeProvider>

@@ -13,6 +13,7 @@ import { SectionDivider } from '@/components/section-divider';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { projectsData } from '@/lib/data';
+import { ThreeImages } from '@/components/threeImages';
 
 const Home = async () => {
   const starsCount = await Promise.all(
@@ -54,6 +55,7 @@ const Home = async () => {
         <Introduction />
         <Intro />
         <Skills />
+        <ThreeImages />
         <SectionDivider />
         <Projects starsCount={starsCount} />
         <Experience />

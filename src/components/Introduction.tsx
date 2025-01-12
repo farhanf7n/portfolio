@@ -31,7 +31,7 @@ export function Introduction({
           >
             <Image
               alt="Farhan Ahmed"
-              className="pointer-events-none absolute object-cover inset-0 h-full w-full overflow-hidden rounded-full"
+              className="pointer-events-none absolute object-cover inset-0 h-full w-full overflow-hidden rounded-lg"
               priority
               quality={95}
               src={portrait}

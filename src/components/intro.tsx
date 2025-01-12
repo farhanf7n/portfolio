@@ -26,7 +26,7 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="text-muted-foreground max-w-lg text-left"
+        className="text-muted-foreground max-w-[56ch] leading-loose text-left"
       >
         I&apos;m Farhan Ahmed, a curious designer, coder. Currently working as a
         Freelance Developer & Designer, but always exploring the limitless
@@ -38,7 +38,7 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="text-muted-foreground max-w-lg text-left"
+        className="text-muted-foreground max-w-[56ch] leading-loose text-left"
       >
         I thrive on transforming ideas into reality, whether it&apos;s crafting
         digital interfaces, designing immersive visuals, or building websites

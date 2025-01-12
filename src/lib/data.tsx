@@ -137,4 +137,6 @@ export const skillsData = [
   { icon: <Icons.nestjs className="size-12" /> },
   { icon: <Icons.prisma className="size-12" /> },
   { icon: <Icons.docker className="size-12" /> },
+  { icon: <Icons.figma className="size-12" /> },
+  { icon: <Icons.xd className="size-12" /> },
 ] as const;
