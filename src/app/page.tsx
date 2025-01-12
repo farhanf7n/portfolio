@@ -1,16 +1,18 @@
+import styles from './layout.module.css';
+
+import clsx from 'clsx';
+
 import { Contact } from '@/components/contact';
 import { Experience } from '@/components/experience';
 import { Footer } from '@/components/footer';
+import { Intro } from '@/components/intro';
+import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
+import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { projectsData } from '@/lib/data';
-import { Introduction } from '@/components/Introduction';
-
-import styles from './layout.module.css';
-import clsx from 'clsx';
-import { Intro } from '@/components/intro';
 
 const Home = async () => {
   const starsCount = await Promise.all(
@@ -51,6 +53,7 @@ const Home = async () => {
         <Navbar />
         <Introduction />
         <Intro />
+        <Skills />
         <SectionDivider />
         <Projects starsCount={starsCount} />
         <Experience />
