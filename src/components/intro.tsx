@@ -16,7 +16,7 @@ export const Intro = () => {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-3xl font-bold text-left leading-tight tracking-tighter sm:text-4xl"
+        className="text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
       >
         About Me
       </motion.h1>
@@ -28,7 +28,7 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-lg text-left"
       >
-        I'm Farhan Ahmed, a curious designer, coder. Currently working as a
+        I&apos;m Farhan Ahmed, a curious designer, coder. Currently working as a
         Freelance Developer & Designer, but always exploring the limitless
         possibilities of creativity and technology.
       </motion.p>
@@ -40,7 +40,7 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-lg text-left"
       >
-        I thrive on transforming ideas into reality, whether it's crafting
+        I thrive on transforming ideas into reality, whether it&apos;s crafting
         digital interfaces, designing immersive visuals, or building websites
         that feel effortless to use.
       </motion.p>
