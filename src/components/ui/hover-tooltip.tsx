@@ -21,7 +21,7 @@ export function HoverTooltip({ children, content }: HoverTooltipProps) {
         <TooltipContent
           side="bottom"
           sideOffset={10}
-          className="text-xs bg-gray-500/10 text-secondary-foreground"
+          className="bg-muted text-secondary-foreground z-[99999] text-xs dark:bg-gray-500/60"
         >
           <p>{content}</p>
         </TooltipContent>
