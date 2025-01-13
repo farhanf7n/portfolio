@@ -1,10 +1,12 @@
 'use client';
-import { clsx } from 'clsx';
-import Image from 'next/image';
 import type { ComponentProps } from 'react';
-import { TofuPolaroid } from '@/components/ui/TofuPolaroid';
-import portrait from '../../public/portrait.jpg';
+import { clsx } from 'clsx';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
+import portrait from '../../public/portrait.jpg';
+
+import { TofuPolaroid } from '@/components/ui/TofuPolaroid';
 
 /**
  * An introduction section with a short bio.
@@ -18,7 +20,7 @@ export function Introduction({
 }: ComponentProps<'section'>) {
   return (
     <section className={clsx(className, 'content py-14')} {...props}>
-      <div className="flex flex-row gap-7 items-center">
+      <div className="flex flex-row items-center gap-7">
         <div className="relative size-[80px]">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -27,11 +29,11 @@ export function Introduction({
               type: 'tween',
               duration: 0.2,
             }}
-            className="highlight dark:highlight-invert absolute h-full w-full select-none rounded-full bg-gray-800/10 dark:bg-gray-100/10"
+            className="highlight dark:highlight-invert absolute size-full select-none rounded-full bg-gray-800/10 dark:bg-gray-100/10"
           >
             <Image
               alt="Farhan Ahmed"
-              className="pointer-events-none absolute object-cover inset-0 h-full w-full overflow-hidden rounded-lg"
+              className="pointer-events-none absolute inset-0 size-full overflow-hidden rounded-lg object-cover"
               priority
               quality={95}
               src={portrait}
@@ -52,7 +54,7 @@ export function Introduction({
           <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">
             Farhan Ahmed
           </h1>
-          <p className="text-base text-gray-400 dark:text-gray-450">
+          <p className="dark:text-gray-450 text-sm text-gray-400 sm:text-base">
             Freelance Developer & Designer
           </p>
         </motion.div>
@@ -63,7 +65,7 @@ export function Introduction({
         transition={{
           delay: 0.1,
         }}
-        className="mb-10 mt-11 text-gray-500 dark:text-gray-350"
+        className="dark:text-gray-350 mb-10 mt-11 text-gray-500"
       >
         <p className="leading-loose">From Visual Concepts to Functional Code</p>
         <p className="max-w-[56ch] leading-loose">
@@ -71,7 +73,7 @@ export function Introduction({
           creative thinker, and aspiring innovator by night.
         </p>
       </motion.div>
-      <div className="mt-8 flex justify-between">
+      <div className="mt-8 flex flex-wrap justify-between gap-4">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,7 +84,7 @@ export function Introduction({
         >
           <a
             aria-label="Twitter (or 𝕏)"
-            className="focusable -ml-2.5 flex h-10 w-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium text-twitter transition hover:text-twitter/50 hover:shadow-twitter/5 focus-visible:ring-twitter/40 dark:text-twitter-dark dark:hover:text-twitter-dark/50 dark:focus-visible:ring-twitter-dark/40"
+            className="focusable text-twitter hover:text-twitter/50 hover:shadow-twitter/5 focus-visible:ring-twitter/40 dark:text-twitter-dark dark:hover:text-twitter-dark/50 dark:focus-visible:ring-twitter-dark/40 -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition"
             href="https://twitter.com/marcbouchenoire"
             rel="me noreferrer"
             target="_blank"
@@ -105,14 +107,14 @@ export function Introduction({
           </a>
           <a
             aria-label="Linkedin"
-            className="focusable -ml-2.5 flex h-10 w-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition group"
+            className="focusable group -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition"
             href="https://linkedin.com/in/farhanf7n"
             rel="me noreferrer"
             target="_blank"
             title="Linkedin"
           >
             <svg
-              className="h-5 transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-50"
+              className="h-5 opacity-100 transition-opacity duration-200 ease-in-out group-hover:opacity-50"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
             >
@@ -128,7 +130,7 @@ export function Introduction({
           </a>
           <a
             aria-label="GitHub"
-            className="focusable -ml-2.5 flex h-10 w-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium text-github transition hover:text-github/50 hover:shadow-github/5 focus-visible:ring-github/40 dark:text-github-dark dark:hover:text-github-dark/50 dark:focus-visible:ring-github-dark/40"
+            className="focusable text-github hover:text-github/50 hover:shadow-github/5 focus-visible:ring-github/40 dark:text-github-dark dark:hover:text-github-dark/50 dark:focus-visible:ring-github-dark/40 -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition"
             href="https://github.com/farhanf7n"
             rel="me noreferrer"
             target="_blank"
@@ -150,7 +152,7 @@ export function Introduction({
           </a>
           <a
             aria-label="Dribbble"
-            className="focusable -ml-2.5 flex h-10 w-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium text-dribbble transition hover:text-dribbble/50 hover:shadow-dribbble/5 focus-visible:ring-dribbble/40 dark:text-dribbble-dark dark:hover:text-dribbble-dark/50 dark:focus-visible:ring-dribbble-dark/40"
+            className="focusable text-dribbble hover:text-dribbble/50 hover:shadow-dribbble/5 focus-visible:ring-dribbble/40 dark:text-dribbble-dark dark:hover:text-dribbble-dark/50 dark:focus-visible:ring-dribbble-dark/40 -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition"
             href="https://dribbble.com/farhanf7n"
             rel="me noreferrer"
             target="_blank"
@@ -197,11 +199,11 @@ export function Introduction({
           transition={{
             delay: 0.3,
           }}
-          className="flex items-center gap-2  sm:backdrop-blur-sm rounded-md px-4 py-2"
+          className="flex items-center gap-2 rounded-md px-4 py-2 pl-0 sm:backdrop-blur-sm"
         >
-          <span className="relative flex items-center justify-center h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#A2D798] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#178D00]"></span>
+          <span className="relative flex size-2">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#00AC3A]"></span>
+            <span className="relative inline-flex size-2 rounded-full bg-[#00CA50]"></span>
           </span>
           <span className="text-muted-foreground text-sm text-[#178D00]">
             Available for new project
