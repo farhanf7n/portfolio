@@ -2,14 +2,9 @@ import styles from './layout.module.css';
 
 import clsx from 'clsx';
 
-import { Contact } from '@/components/contact';
-import { Experience } from '@/components/experience';
-import { Footer } from '@/components/footer';
 import { Intro } from '@/components/intro';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
-import { Projects } from '@/components/projects';
-import { SectionDivider } from '@/components/section-divider';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { ThreeImages } from '@/components/threeImages';
@@ -56,11 +51,11 @@ const Home = async () => {
         <Intro />
         <Skills />
         <ThreeImages />
-        <SectionDivider />
+        {/* <SectionDivider />
         <Projects starsCount={starsCount} />
         <Experience />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
