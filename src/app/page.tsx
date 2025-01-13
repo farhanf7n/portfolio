@@ -12,8 +12,8 @@ import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { projectsData } from '@/lib/data';
 import { ThreeImages } from '@/components/threeImages';
+import { projectsData } from '@/lib/data';
 
 const Home = async () => {
   const starsCount = await Promise.all(
