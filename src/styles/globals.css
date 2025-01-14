@@ -88,8 +88,7 @@
 }
 
 .auraRaysMask {
-  mask-image: linear-gradient(
-      50deg,
+  mask-image: linear-gradient(50deg,
       transparent 32%,
       #000 36%,
       transparent 38%,
@@ -101,8 +100,7 @@
       #000 62%,
       rgb(0 0 0 / 35%) 65%,
       rgb(0 0 0 / 75%) 66%,
-      transparent 71%
-    ),
+      transparent 71%),
     linear-gradient(0deg, transparent 20%, rgb(0 0 0 / 60%));
   mask-position:
     60% 0%,
@@ -111,13 +109,15 @@
     300% auto,
     auto;
 
-  @media screen(sm) {
+  @media (min-width: 640px) {
+    /* sm breakpoint */
     mask-size:
       200% auto,
       auto;
   }
 
-  @media screen(md) {
+  @media (min-width: 768px) {
+    /* md breakpoint */
     mask-position:
       50% 0%,
       0% 0%;
@@ -128,31 +128,27 @@
 }
 
 .auraRainbowGradient {
-  background: conic-gradient(
-    theme('colors.red.500'),
-    theme('colors.pink.500'),
-    theme('colors.violet.500'),
-    theme('colors.blue.500'),
-    theme('colors.sky.500'),
-    theme('colors.teal.500'),
-    theme('colors.lime.500'),
-    theme('colors.amber.500'),
-    theme('colors.red.500')
-  );
+  background: conic-gradient(theme('colors.red.500'),
+      theme('colors.pink.500'),
+      theme('colors.violet.500'),
+      theme('colors.blue.500'),
+      theme('colors.sky.500'),
+      theme('colors.teal.500'),
+      theme('colors.lime.500'),
+      theme('colors.amber.500'),
+      theme('colors.red.500'));
   animation: 8s linear infinite aura-rainbow;
 
   :global(.dark) & {
-    background: conic-gradient(
-      theme('colors.red.300'),
-      theme('colors.pink.300'),
-      theme('colors.violet.300'),
-      theme('colors.blue.300'),
-      theme('colors.sky.300'),
-      theme('colors.teal.300'),
-      theme('colors.lime.300'),
-      theme('colors.amber.300'),
-      theme('colors.red.300')
-    );
+    background: conic-gradient(theme('colors.red.300'),
+        theme('colors.pink.300'),
+        theme('colors.violet.300'),
+        theme('colors.blue.300'),
+        theme('colors.sky.300'),
+        theme('colors.teal.300'),
+        theme('colors.lime.300'),
+        theme('colors.amber.300'),
+        theme('colors.red.300'));
   }
 }
 
@@ -160,13 +156,11 @@
   width: 18px;
   height: 64px;
   animation: progress-sze6ck 2s infinite backwards;
-  background: linear-gradient(
-    0deg,
-    #000000,
-    #000000 100%,
-    transparent 100%,
-    transparent
-  );
+  background: linear-gradient(0deg,
+      #000000,
+      #000000 100%,
+      transparent 100%,
+      transparent);
   background-size: 100% 200%;
   background-repeat: no-repeat;
   border: 2px solid #69ff00;
@@ -197,5 +191,107 @@
   100% {
     background-position: 0 200%;
     transform: rotate(360deg);
+  }
+}
+
+.cubic-btn {
+  background: #e8ff85;
+  outline: none;
+  padding-inline: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: scaleX(1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
+  display: flex;
+  align-items: center;
+}
+
+.cubic-btn:hover {
+  animation: animate-scaleX 0.6s cubic-bezier(0.4, 0, 0, 1);
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 1s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.cubic-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #122625;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1),
+    border-radius 0.5s cubic-bezier(0.4, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  transform: translateY(100%);
+  text-align: center;
+}
+
+.cubic-btn:hover::after {
+  transform: translateY(0%);
+  border-radius: 0;
+  text-align: center;
+}
+
+.cubic-btn span {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: #122625;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cubic-btn span p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inner {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.cubic-btn:hover .inner {
+  transform: translateY(-100%);
+}
+
+.cubic-btn span:after {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
+  content: attr(data-text);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  transform: translate(-50%, 100%);
+  color: #e8ff85;
+  text-align: center;
+}
+
+.cubic-btn:hover span:after {
+  transform: translate(-50%, 0);
+}
+
+.cubic-btn:focus {
+  outline: none;
+}
+
+@keyframes animate-scaleX {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(1.05);
+  }
+
+  100% {
+    transform: scaleX(1);
   }
 }

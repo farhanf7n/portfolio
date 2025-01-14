@@ -5,9 +5,9 @@ import clsx from 'clsx';
 import { Intro } from '@/components/intro';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
+import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { ThreeImages } from '@/components/threeImages';
 import { projectsData } from '@/lib/data';
 
 const Home = async () => {
@@ -50,10 +50,10 @@ const Home = async () => {
         <Introduction />
         <Intro />
         <Skills />
-        <ThreeImages />
-        {/* <SectionDivider />
+        {/* <ThreeImages />
+        <SectionDivider /> */}
         <Projects starsCount={starsCount} />
-        <Experience />
+        {/* <Experience />
         <Contact />
         <Footer /> */}
       </div>

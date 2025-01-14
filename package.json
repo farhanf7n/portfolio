@@ -12,19 +12,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
-    "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{jsx,js,ts,tsx}": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ]
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -32,6 +20,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.6",
     "@t3-oss/env-nextjs": "^0.11.1",
+    "bright": "^1.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.4",
