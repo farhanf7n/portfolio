@@ -210,7 +210,7 @@ export const Navbar = () => {
             </Link>
           </HoverTooltip>
 
-          <Link className="cubic-btn" href="/contact">
+          <Link className="cubic-btn rounded-md" href="/contact">
             <span data-text="Let's Talk">
               <p className="inner">Have an Idea?</p>
             </span>

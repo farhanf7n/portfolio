@@ -198,7 +198,6 @@
   background: #e8ff85;
   outline: none;
   padding-inline: 2rem;
-  border-radius: 12px;
   overflow: hidden;
   transform: scaleX(1);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);

@@ -37,9 +37,7 @@ export function ProjectCard({
   title,
   href,
   archived,
-  active,
   description,
-  dates,
   tags,
   link,
   image,
@@ -87,13 +85,7 @@ export function ProjectCard({
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
-          {active ? (
-            <p className="animate-pulse font-sans text-xs text-green-500">
-              Developing...{' '}
-            </p>
-          ) : (
-            <time className="font-sans text-xs">{dates}</time>
-          )}
+
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace('https://', '').replace('www.', '').replace('/', '')}
           </div>

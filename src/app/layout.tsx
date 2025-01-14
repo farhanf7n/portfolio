@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 
 import { PropsWithChildren } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import type { Metadata } from 'next';
 
 import { ActiveSectionProvider } from '@/components/active-section-provider';
@@ -9,7 +10,6 @@ import { Toaster } from '@/components/toaster';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
-import { AnimatePresence } from 'framer-motion';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

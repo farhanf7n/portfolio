@@ -8,17 +8,8 @@ import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { projectsData } from '@/lib/data';
 
 const Home = async () => {
-  const starsCount = await Promise.all(
-    projectsData.map(async ({ links }) => {
-      const res = await fetch(links.githubApi, { cache: 'no-store' });
-      const data = await res.json();
-      return data.stargazers_count;
-    })
-  );
-
   return (
     <>
       <div className="pointer-events-none absolute top-0 h-72 w-full overflow-hidden md:h-80 lg:h-96">
@@ -52,7 +43,8 @@ const Home = async () => {
         <Skills />
         {/* <ThreeImages />
         <SectionDivider /> */}
-        <Projects starsCount={starsCount} />
+
+        <Projects />
         {/* <Experience />
         <Contact />
         <Footer /> */}

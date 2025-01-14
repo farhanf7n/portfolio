@@ -4,101 +4,251 @@ export const links = [
   {
     name: 'Home',
     hash: '/',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-        color="#1c2022"
-        fill="none"
-      >
-        <path
-          d="M15.0002 17C14.2007 17.6224 13.1504 18 12.0002 18C10.8499 18 9.79971 17.6224 9.00018 17"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M2.35157 13.2135C1.99855 10.9162 1.82204 9.76763 2.25635 8.74938C2.69065 7.73112 3.65421 7.03443 5.58132 5.64106L7.02117 4.6C9.41847 2.86667 10.6171 2 12.0002 2C13.3832 2 14.5819 2.86667 16.9792 4.6L18.419 5.64106C20.3462 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6488 13.2135L21.3478 15.1724C20.8473 18.4289 20.5971 20.0572 19.4292 21.0286C18.2613 22 16.5538 22 13.139 22H10.8614C7.44652 22 5.73909 22 4.57118 21.0286C3.40327 20.0572 3.15305 18.4289 2.65261 15.1724L2.35157 13.2135Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
   },
   {
     name: 'About',
     hash: '/about',
-    icon: <Icons.user className="size-4" />,
   },
   {
     name: 'Projects',
     hash: '/projects',
-    icon: <Icons.code className="size-4" />,
   },
   {
     name: 'Experience',
     hash: '/experience',
-    icon: <Icons.briefcase className="size-4" />,
   },
   {
     name: 'Contact',
     hash: '/contact',
-    icon: <Icons.mail className="size-4" />,
   },
 ] as const;
 
 export const projectsData = [
   {
-    image: '/projects/socialhub.svg',
-    title: 'SocialHub',
+    title: 'x0-GPT - Ai powered brain',
+    href: 'https://x0-gpt.devwtf.in',
+    dates: 'Jul 2024 - Aug 2024',
+    featured: true,
     description:
-      'Next-generation social media app, built with its own backend.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
-    links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
-    },
-  },
-  {
-    image: '/projects/nextstarter.svg',
-    title: 'Next-starter',
-    description: 'Next.js starter template, packed with useful features.',
+      "x0-GPT is a free AI tool that lets you interact with websites, PDFs, and documents in real-time. It provides quick answers and insights directly from your chosen sources, all while keeping your data private. It's easy to use and versatile, making information more accessible than ever.",
     technologies: [
       'Next.js',
-      'TypeScript',
-      'Tailwind',
-      'Shadcn/ui',
-      'Next-auth',
-      'Prisma',
+      'Typescript',
+      'Postgres',
+      'Upstash rag-chat sdk',
+      'Vercel ai sdk',
+      'Supabase',
+      'TailwindCSS',
+      'Acternity UI',
+      'Shadcn UI',
+      'Magic UI',
     ],
-    links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
-    },
+    links: [
+      {
+        type: 'Website',
+        href: 'https://x0-gpt.devwtf.in',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: 'Source',
+        href: 'https://git.new/pvOF6aq',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/ffeIgzW.png',
+    video: '',
   },
   {
-    image: '/projects/audiophile.svg',
-    title: 'Audiophile',
-    description: 'Online store specializing in headphones and speakers.',
+    title: 'Profanity Validator - a SDK for profanity moderation',
+    href: 'https://profanity.devwtf.in',
+    dates: '28th Oct 2024 - 29th Oct 2024',
+    featured: true,
+    description:
+      "If you run a web app with any kind of user generated content, it's your responsibility to keep things in order. That's a challenge if your users keep dropping F-bombs like confetti at a toddler's birthday party. That's what this SDK actually solves but with more moderation capabilities.",
     technologies: [
       'React',
-      'Styled-components',
-      'TypeScript',
-      'Stripe',
-      'Firebase',
+      'Next.js',
+      'Typescript',
+      'NodeJs',
+      'NPM',
+      'react-hook-forms',
+      'zod',
+      'Shadcn UI',
     ],
-    links: {
-      preview: 'https://audiophile-ms.netlify.app/',
-      github: 'https://github.com/Skolaczk/Audiophile',
-      githubApi: 'https://api.github.com/repos/Skolaczk/Audiophile',
-    },
+    links: [
+      {
+        type: 'Website',
+        href: 'https://profanity.devwtf.in',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: 'Source',
+        href: 'https://l.devwtf.in/profanity',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/KCJmPOa.png',
+    video: '',
+  },
+  {
+    title: 'Acter - Ai to convert your ideas into UI',
+    href: 'https://acter.devwtf.in',
+    // dates: "Mar 2024 - May 2024",
+    featured: true,
+    active: true,
+    description:
+      'Acter is an Ai tool which will help you to convert your ideas into great UI and it supports a huge number of popular UI libraries and frameworks which will make your work easier to modify any existing code from any library. And also you can generate your UI using a particular framework and UI library.',
+    technologies: [
+      'Next.js',
+      'Typescript',
+      'Xata DB',
+      'RAG',
+      'Vercel ai sdk',
+      'Postgress',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://acter.devwtf.in',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: 'Source',
+        href: 'https://l.devwtf.in/acter',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/JwDi96s.png',
+    video: '',
+  },
+  {
+    title: 'Evently - Chromium extension for event auditing',
+    href: 'https://evently.devwtf.in',
+    dates: 'Sept 2024 - Sept 2024',
+    featured: false,
+    description:
+      'Your essential companion for event auditing. It features a straightforward countdown timer that can be displayed in new tabs within Chromium-based browsers, providing users with a simple yet effective way to track time until their event.',
+    technologies: [
+      'Next.js',
+      'Typescript',
+      'React',
+      'TailwindCSS',
+      'Shadcn UI',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://evently.devwtf.in',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: 'Source',
+        href: 'https://git.new/ESRt29k',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/JI752LF.png',
+    video: '',
+  },
+  {
+    title: 'FPC - Freelancer Price Calculator',
+    href: 'https://freelance-price-calculator.devwtf.in/',
+    dates: 'Sept 2024 - Sept 2024',
+    featured: false,
+    description:
+      'A powerful and intuitive tool for freelancers to calculate project prices and convert currencies realtime.',
+    technologies: [
+      'Next.js',
+      'Currency Api',
+      'Typescript',
+      'React',
+      'TailwindCSS',
+      'Shadcn UI',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://freelance-price-calculator.devwtf.in/',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: 'Source',
+        href: 'https://git.new/tValGOy',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/1zeZewW.png',
+    video: '',
+  },
+  {
+    title: 'Telegram Member Adder',
+    // href: "https://github.com/SkidGod4444/TeleGram-Member-Adder",
+    dates: 'Apr 2023 - Apr 2023',
+    featured: false,
+    archived: true,
+    description:
+      'A python code to scrap telegram group members data and adds them to another telegram group..',
+    technologies: ['Scrapping', 'Telegram API', 'Python'],
+    links: [
+      {
+        type: 'Source',
+        href: 'https://github.com/SkidGod4444/TeleGram-Member-Adder',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: '',
+    video: '',
+  },
+  {
+    title: 'Sputnik - My first python discord bot',
+    // href: "https://github.com/SkidGod4444/TeleGram-Member-Adder",
+    dates: 'Oct 2022 - Sept 2023',
+    featured: false,
+    archived: true,
+    description:
+      'All in one python discord bot. Source code was migrated from Replit to Github later.',
+    technologies: ['Discord.py', 'Discord API', 'Python', 'Replit', 'Json DB'],
+    links: [
+      {
+        type: 'Source',
+        href: 'https://github.com/SkidGod4444/Sputnik',
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: '',
+    video: '',
   },
 ] as const;
+
+export const CLIENTWORKS = [
+  {
+    title: 'BOXCHAT - One chat for all ai models',
+    dates: '9th Sep 2024 - 22nd Sep 2024',
+    worktype: 'Fullstack',
+    testimonial:
+      'https://firebasestorage.googleapis.com/v0/b/archives-63571.appspot.com/o/portfolio%2Ftestimonials%2Fboxchat-testimonial.mp4?alt=media&token=51be6968-e40f-4074-a0f7-026f98930671',
+    featured: true,
+    description:
+      'BOXCHAT is a SAAS that lets you interact with websites, PDFs, and documents in real-time. It provides quick answers and insights directly from your chosen sources, it gives multiple ai models feature to sync your questions and get different responses at a time.',
+    features:
+      'Playground feature like **Vercel**. Chat feature like **ChatGPT**. Text to image generation.',
+    technologies: [
+      'Next.js',
+      'Typescript',
+      'Postgres',
+      'Upstash rag-chat sdk',
+      'Vercel ai sdk',
+      'Supabase',
+      'TailwindCSS',
+      'Acternity UI',
+      'Shadcn UI',
+      'Magic UI',
+    ],
+    image: '',
+    video:
+      'https://firebasestorage.googleapis.com/v0/b/archives-63571.appspot.com/o/portfolio%2Fboxchat-preview.mp4?alt=media&token=e18c270b-dbce-4588-838e-2162c2de4bd8',
+  },
+];
 
 export const experiencesData = [
   {
