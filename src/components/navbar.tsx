@@ -10,7 +10,7 @@ export const Navbar = () => {
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="sm:bg-secondary/80 sticky top-5 z-[9999] my-5 flex items-center justify-between gap-1 sm:top-10 sm:my-10 sm:rounded-xl sm:p-[6px] sm:backdrop-blur-sm"
+      className="bg-secondary/80 sticky top-5 z-[9999] my-5 flex items-center justify-between gap-1 rounded-xl p-[6px] backdrop-blur-sm sm:top-10 sm:my-10"
     >
       <nav className="text-muted-foreground text-sm">
         <div className="flex gap-3">
@@ -210,11 +210,13 @@ export const Navbar = () => {
             </Link>
           </HoverTooltip>
 
-          <Link className="cubic-btn rounded-md" href="/contact">
-            <span data-text="Let's Talk">
-              <p className="inner">Have an Idea?</p>
-            </span>
-          </Link>
+          <div className="hidden sm:block">
+            <Link className="cubic-btn size-full rounded-md" href="/contact">
+              <span data-text="Let's Talk">
+                <p className="inner">Have an Idea?</p>
+              </span>
+            </Link>
+          </div>
         </div>
       </nav>
     </motion.header>
