@@ -274,6 +274,37 @@ export const experiencesData = [
   },
 ] as const;
 
+export const servicesData = [
+  {
+    tagLine: 'Node, React',
+    title: 'Single page APPs',
+    description:
+      'Scalability, Reusable Components, Performance, One Way Data Flow - the perfect ingredients for single-page applications.',
+    icon: <Icons.appsIcon className="size-24" />,
+  },
+  {
+    tagLine: 'Mobile/ Desktop Designs',
+    title: 'UI Designing',
+    description:
+      'We create products that serve both users and businesses and drive real results.',
+    icon: <Icons.figma className="size-24" />,
+  },
+  {
+    tagLine: 'PSD TO HTML',
+    title: 'Front-End Coding',
+    description:
+      'We convert any design file: Sketch, PSD, Adobe XD, Ai to pixel perfect, semantic and standard compliant HTML/CSS template.',
+    icon: <Icons.html className="size-24" />,
+  },
+  {
+    tagLine: 'PSD to Shopify',
+    title: 'Shopify Development',
+    description:
+      'We can turn design mock-ups from any format into a fully functional, responsive Shopify sites that makes our client&pos;s life easy.',
+    icon: <Icons.shopify className="size-24" />,
+  },
+] as const;
+
 export const skillsData = [
   { icon: <Icons.html className="size-12" /> },
   { icon: <Icons.css className="size-12" /> },
