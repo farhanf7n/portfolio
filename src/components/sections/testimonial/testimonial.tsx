@@ -10,7 +10,7 @@ const testimonials = [
     role: 'Web Directions',
     avatar: '/john.jpg',
     description:
-      '<p>Farhan Shadeed has quickly become <strong>an authority on developing with CSS</strong></p>',
+      '<p>Farhan Ahmed has quickly become <strong>an authority on developing with CSS</strong></p>',
   },
   {
     name: 'Chris Coyier',
@@ -59,7 +59,7 @@ const testimonials = [
     role: 'Set Studio, Piccalilli',
     avatar: '/andy.jpeg',
     description:
-      '<p>I&apos;m an Farhan Shadeed super fan, I&apos;m not going to shy away from that. This is because <strong>Farhan is one of the best in the biz at explaining CSS capabilities</strong>.</p>',
+      '<p>I&apos;m an Farhan Ahmed super fan, I&apos;m not going to shy away from that. This is because <strong>Farhan is one of the best in the biz at explaining CSS capabilities</strong>.</p>',
   },
   {
     name: 'Trung Vo',
