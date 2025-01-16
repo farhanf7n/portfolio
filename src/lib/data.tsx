@@ -305,6 +305,45 @@ export const servicesData = [
   },
 ] as const;
 
+export const pricingData = [
+  {
+    bgColor: '#56c598',
+    tagLine: 'Hours',
+    planName: 'Single page APPs',
+    description:
+      'Complete flexibility, pay only for the hours your project needs.',
+    price: 'USD $30',
+    duration: 'Hr.',
+  },
+  {
+    lightBgColor: '#292929',
+    darkBgColor: '#fffafa',
+    tagLine: 'Design UI/UX',
+    planName: 'Prometeo',
+    description: 'Get high-quality UI design services for a fixed monthly fee.',
+    price: 'USD $2.700',
+    duration: 'Monthly',
+  },
+  {
+    bgColor: '#c391f5',
+    tagLine: 'Front End',
+    planName: 'Hefesto',
+    description:
+      'Ongoing access to front-end development services through a monthly fee.',
+    price: 'USD $3.000',
+    duration: 'Monthly',
+  },
+  {
+    bgColor: '#f7fd8f',
+    tagLine: 'Design UI/UX + Front End',
+    planName: 'Ananke',
+    description:
+      'The perfect combination for comprehensive projects: Design and development.',
+    price: 'USD $3.500',
+    duration: 'Monthly',
+  },
+] as const;
+
 export const skillsData = [
   { icon: <Icons.html className="size-12" /> },
   { icon: <Icons.css className="size-12" /> },
