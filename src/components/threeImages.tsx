@@ -22,10 +22,10 @@ export function ThreeImages({
 
   return (
     <section className={clsx(className, 'content my-14')} {...props} ref={ref}>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <motion.div
           style={{ rotate: rotate1 }}
-          className="flex min-w-[180px] flex-col overflow-hidden rounded-md border border-gray-200/50 p-3 sm:min-w-[220px] md:min-w-[260px] dark:border-white/30"
+          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
         >
           <Image
             className="size-full rounded-md object-cover"
@@ -38,7 +38,7 @@ export function ThreeImages({
 
         <motion.div
           style={{ rotate: rotate2 }}
-          className="flex min-w-[180px] flex-col overflow-hidden rounded-md border border-gray-200/50 p-3 sm:min-w-[220px] md:min-w-[260px] dark:border-white/30"
+          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
         >
           <Image
             className="size-full rounded-md object-cover"
@@ -51,7 +51,7 @@ export function ThreeImages({
 
         <motion.div
           style={{ rotate: rotate3 }}
-          className="flex min-w-[180px] flex-col overflow-hidden rounded-md border border-gray-200/50 p-3 sm:min-w-[220px] md:min-w-[260px] dark:border-white/30"
+          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
         >
           <Image
             className="size-full rounded-md object-cover"
@@ -64,7 +64,7 @@ export function ThreeImages({
 
         <motion.div
           style={{ rotate: rotate4 }}
-          className="flex min-w-[180px] flex-col overflow-hidden rounded-md border border-gray-200/50 p-3 sm:min-w-[220px] md:min-w-[260px] dark:border-white/30"
+          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
         >
           <Image
             className="size-full rounded-md object-cover"
