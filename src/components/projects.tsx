@@ -58,7 +58,7 @@ export const Projects = () => {
             <TabsContent value="myworks">
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className="w-full space-y-12">
-                  <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-4 sm:grid-cols-2">
                     {projectsData
                       .filter((projectsData) => projectsData.featured)
                       .map((projectsData, id) => (
