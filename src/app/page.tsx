@@ -6,8 +6,12 @@ import { Intro } from '@/components/intro';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
+import { SectionDivider } from '@/components/section-divider';
+import { Services } from '@/components/sections/services/services';
+import Testimonial from '@/components/sections/testimonial/testimonial';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { ThreeImages } from '@/components/threeImages';
 
 const Home = async () => {
   return (
@@ -41,10 +45,12 @@ const Home = async () => {
         <Introduction />
         <Intro />
         <Skills />
-        {/* <ThreeImages />
-        <SectionDivider /> */}
-
+        <SectionDivider />
+        <ThreeImages />
+        <SectionDivider />
         <Projects />
+        <Services />
+        <Testimonial />
         {/* <Experience />
         <Contact />
         <Footer /> */}
