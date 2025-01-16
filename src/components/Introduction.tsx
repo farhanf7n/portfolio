@@ -67,8 +67,10 @@ export function Introduction({
         }}
         className="dark:text-gray-350 mb-10 mt-11 text-gray-500"
       >
-        <p className="leading-loose">From Visual Concepts to Functional Code</p>
-        <p className="max-w-[56ch] leading-loose">
+        <p className="text-muted-foreground max-w-[56ch] text-left leading-loose">
+          From Visual Concepts to Functional Code
+        </p>
+        <p className="text-muted-foreground max-w-[56ch] text-left leading-loose">
           Crafting seamless experiences and bold visuals. Developer by day,
           creative thinker, and aspiring innovator by night.
         </p>
@@ -173,7 +175,7 @@ export function Introduction({
             </svg>
           </a>
           <a
-            className="focusable -ml-2.5 flex h-10 w-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium text-red-500 transition hover:text-red-500/50 hover:shadow-red-500/5 focus-visible:ring-red-500/40 dark:text-red-400 dark:hover:text-red-400/50 dark:focus-visible:ring-red-400/40"
+            className="focusable -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium text-red-500 transition hover:text-red-500/50 hover:shadow-red-500/5 focus-visible:ring-red-500/40 dark:text-red-400 dark:hover:text-red-400/50 dark:focus-visible:ring-red-400/40"
             href="mailto:farhanf7n@gmail.com"
             title="Email"
           >
