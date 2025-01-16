@@ -5,4 +5,5 @@ export type SectionName =
   | 'Skills'
   | 'Experience'
   | 'Contact'
-  | 'Services';
+  | 'Services'
+  | 'Pricing';
