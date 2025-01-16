@@ -294,3 +294,44 @@
     transform: scaleX(1);
   }
 }
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 1rem 1rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='49' viewBox='0 0 48 49' fill='none'%3E%3Cg opacity='0.09'%3E%3Cpath d='M6.49114 5.58429V5.58617C5.13366 5.58804 4.02553 6.71868 4.04991 8.0743V22.8285V22.8304C4.05179 24.1692 5.15242 25.2698 6.49114 25.2716H6.49302H9.8174C9.63928 26.1454 9.44803 26.9329 9.02992 27.591C8.25553 28.7666 5.93055 30.4673 4.44179 31.0954C3.22868 31.6073 2.63617 33.0116 3.1143 34.2398L5.72617 40.9804C6.22115 42.261 7.70242 42.8892 8.96804 42.3529C8.96992 42.351 8.97179 42.351 8.97367 42.3492C13.8826 40.2154 17.593 36.7936 19.7473 32.2653C21.4366 28.7609 22.3142 25.0053 22.3142 18.1802V8.0719C22.3385 6.72002 21.2342 5.59126 19.8823 5.58377H19.8767L6.49282 5.58189V5.58377H6.49095L6.49114 5.58429ZM29.2235 5.58429C27.866 5.58617 26.7578 6.71868 26.7822 8.07429V22.8285V22.8304C26.7841 24.1692 27.8847 25.2698 29.2235 25.2716H29.2253H32.5516C32.3735 26.1454 32.1803 26.9329 31.7622 27.591C30.9878 28.7666 28.6629 30.4672 27.1741 31.0954C25.9591 31.6072 25.3685 33.0135 25.8485 34.2416L28.4604 40.9804C28.9553 42.261 30.4366 42.8891 31.7022 42.3529C31.7041 42.351 31.706 42.351 31.7079 42.3491C36.6168 40.2154 40.3253 36.7936 42.4815 32.2634C44.1689 28.759 45.0465 25.0034 45.0465 18.1802V8.07184C45.0709 6.71997 43.9684 5.5912 42.6165 5.58372H42.6109L29.227 5.58184L29.2251 5.58372H29.2233L29.2235 5.58429Z' fill='%23e8ff85'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+blockquote strong {
+  color: hsl(var(--muted-foreground));
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, .08));
+}
+
+.dark blockquote strong {
+  color: #e8ff85;
+  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, .08));
+}
+
+blockquote cite {
+  color: hsl(var(--muted-foreground));
+}
+
+.dark blockquote cite {
+  color: #e8ff85;
+}
