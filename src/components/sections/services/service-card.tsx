@@ -5,11 +5,11 @@ import { servicesData } from '@/lib/data';
 
 export const ServiceCard = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className="dark:bg-secondary/80 relative grid grid-cols-[1fr,auto] gap-4 overflow-hidden rounded-lg bg-white p-6 shadow-sm"
+          className="dark:bg-secondary/80 group relative grid grid-cols-[1fr,auto] gap-4 overflow-hidden rounded-lg bg-white p-6 shadow-sm"
         >
           <div className="space-y-2">
             <p className="focus:ring-ring bg-secondary text-muted-foreground hover:bg-secondary/80 inline-flex items-center rounded-md border border-transparent px-1 py-0 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2">
@@ -22,7 +22,7 @@ export const ServiceCard = () => {
               {service.description}
             </p>
           </div>
-          <div className="absolute -right-6 -top-6 shrink-0 -rotate-[27deg]">
+          <div className="absolute -right-6 -top-6 shrink-0 -rotate-[27deg] transition-all duration-500 ease-out group-hover:-rotate-[31deg]">
             {service.icon}
           </div>
         </div>
