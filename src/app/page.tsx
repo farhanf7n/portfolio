@@ -7,6 +7,7 @@ import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
+import { Pricing } from '@/components/sections/pricing/pricing';
 import { Services } from '@/components/sections/services/services';
 import Testimonial from '@/components/sections/testimonial/testimonial';
 import { Skills } from '@/components/skills';
@@ -51,6 +52,7 @@ const Home = async () => {
         <Projects />
         <Services />
         <Testimonial />
+        <Pricing />
         {/* <Experience />
         <Contact />
         <Footer /> */}
