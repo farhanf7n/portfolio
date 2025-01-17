@@ -51,7 +51,7 @@ export const Projects = () => {
             defaultValue="myworks"
             className="flex w-full flex-col items-center justify-center"
           >
-            <TabsList className="mb-4 grid w-[400px] grid-cols-2">
+            <TabsList className="mb-4 grid w-full grid-cols-2">
               <TabsTrigger value="myworks">My Works</TabsTrigger>
               <TabsTrigger value="clientworks">Client Works</TabsTrigger>
             </TabsList>
