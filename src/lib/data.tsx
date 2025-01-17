@@ -307,39 +307,42 @@ export const servicesData = [
 
 export const pricingData = [
   {
+    href: 'https://wa.me/+923091789249?text=Hello!%20I%27m%20interested%20in%20working%20with%20you.%20Could%20you%20provide%20me%20with%20more%20details%20about%20the%20Kairos%20plan%20and%20how%20we%20can%20get%20started%3F',
     bgColor: '#56c598',
     tagLine: 'Hours',
-    planName: 'Single page APPs',
+    planName: 'Kairos',
     description:
       'Complete flexibility, pay only for the hours your project needs.',
     price: 'USD $30',
     duration: 'Hr.',
   },
   {
-    lightBgColor: '#292929',
-    darkBgColor: '#fffafa',
+    href: 'https://wa.me/+923091789249?text=Hello!%20I%27m%20interested%20in%20working%20with%20you.%20Could%20you%20provide%20me%20with%20more%20details%20about%20the%20Prometeo%20plan%20and%20how%20we%20can%20get%20started%3F',
+    bgColor: '#b488fb',
     tagLine: 'Design UI/UX',
     planName: 'Prometeo',
     description: 'Get high-quality UI design services for a fixed monthly fee.',
-    price: 'USD $2.700',
+    price: 'USD $2,700',
     duration: 'Monthly',
   },
   {
+    href: 'href="https://wa.me/+923091789249?text=Hello!%20I%27m%20interested%20in%20working%20with%20you.%20Could%20you%20provide%20me%20with%20more%20details%20about%20the%20Hefesto%20plan%20and%20how%20we%20can%20get%20started%3F"',
     bgColor: '#c391f5',
     tagLine: 'Front End',
     planName: 'Hefesto',
     description:
       'Ongoing access to front-end development services through a monthly fee.',
-    price: 'USD $3.000',
+    price: 'USD $3,000',
     duration: 'Monthly',
   },
   {
+    href: 'href="https://wa.me/+923091789249?text=Hello!%20I%27m%20interested%20in%20working%20with%20you.%20Could%20you%20provide%20me%20with%20more%20details%20about%20the%20Ananke%20plan%20and%20how%20we%20can%20get%20started%3F"',
     bgColor: '#f7fd8f',
     tagLine: 'Design UI/UX + Front End',
     planName: 'Ananke',
     description:
       'The perfect combination for comprehensive projects: Design and development.',
-    price: 'USD $3.500',
+    price: 'USD $3,500',
     duration: 'Monthly',
   },
 ] as const;
