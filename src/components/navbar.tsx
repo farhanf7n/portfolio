@@ -181,7 +181,7 @@ export const Navbar = () => {
 
           <HoverTooltip content="Contact">
             <Link
-              className="hover:text-foreground focusable relative rounded-md bg-transparent p-1.5 px-4 py-2 transition hover:bg-gray-500/10 dark:hover:bg-gray-400/20"
+              className="hover:text-foreground focusable relative block rounded-md bg-transparent p-1.5 px-4 py-2 transition hover:bg-gray-500/10 sm:hidden dark:hover:bg-gray-400/20"
               href="/contact"
             >
               <svg
