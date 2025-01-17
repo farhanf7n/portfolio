@@ -11,12 +11,14 @@ import {
   LucideProps,
   MailIcon,
   Moon,
+  MoveUpRight,
   Star,
   Sun,
   Video,
 } from 'lucide-react';
 
 export const Icons = {
+  moveUpRight: MoveUpRight,
   sun: Sun,
   moon: Moon,
   arrowRight: ArrowRight,
