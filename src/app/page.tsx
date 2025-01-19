@@ -13,6 +13,7 @@ import Testimonial from '@/components/sections/testimonial/testimonial';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { ThreeImages } from '@/components/threeImages';
+import { Faq } from '@/components/sections/faq/faq';
 
 const Home = async () => {
   return (
@@ -53,6 +54,7 @@ const Home = async () => {
         <Services />
         <Testimonial />
         <Pricing />
+        <Faq />
         {/* <Experience />
         <Contact />
         <Footer /> */}
