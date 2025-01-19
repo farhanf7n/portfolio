@@ -22,7 +22,7 @@ export const Services = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
       >
-        How Can I Help?
+        How Can <span className="font-bold dark:text-[#e8ff85]">I Help?</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
