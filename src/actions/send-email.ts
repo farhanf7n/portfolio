@@ -7,14 +7,18 @@ import { TFormSchema } from '@/lib/form-schema';
 
 const resend = new Resend(env.RESEND_API_KEY);
 
-export const sendEmail = async ({ email, message }: TFormSchema) => {
+export const sendEmail = async ({ name, email, message }: TFormSchema) => {
   try {
     await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: 'farhanf7n@gmail.com',
-      subject: 'Message from contact form',
+      subject: `Message from ${name} via contact form`,
       replyTo: email,
-      text: `email: ${email} \nmessage: ${message}`,
+      text: `
+Name: ${name}
+Email: ${email}
+Message: ${message}
+      `,
     });
 
     return {
@@ -22,7 +26,7 @@ export const sendEmail = async ({ email, message }: TFormSchema) => {
     };
   } catch {
     return {
-      error: `Something went wrong!`,
+      error: 'Something went wrong!',
     };
   }
 };
