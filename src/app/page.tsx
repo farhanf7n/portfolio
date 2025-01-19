@@ -2,18 +2,20 @@ import styles from './layout.module.css';
 
 import clsx from 'clsx';
 
+import { Footer } from '@/components/footer';
 import { Intro } from '@/components/intro';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
+import { Contact } from '@/components/sections/contact/contact';
+import { Faq } from '@/components/sections/faq/faq';
 import { Pricing } from '@/components/sections/pricing/pricing';
 import { Services } from '@/components/sections/services/services';
 import Testimonial from '@/components/sections/testimonial/testimonial';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { ThreeImages } from '@/components/threeImages';
-import { Faq } from '@/components/sections/faq/faq';
 
 const Home = async () => {
   return (
@@ -55,9 +57,9 @@ const Home = async () => {
         <Testimonial />
         <Pricing />
         <Faq />
-        {/* <Experience />
         <Contact />
-        <Footer /> */}
+        {/* <Experience /> */}
+        <Footer />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
