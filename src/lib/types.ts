@@ -6,4 +6,6 @@ export type SectionName =
   | 'Experience'
   | 'Contact'
   | 'Services'
-  | 'Pricing';
+  | 'Pricing'
+  | 'Testimonial'
+  | 'FAQ';
