@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Skills } from '@/components/skills';
-import { Navbar } from '@/components/navbar';
+
 import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
+import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 import {
   Tooltip,
@@ -12,17 +13,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-
-const experience = [
-  {
-    company: 'Freelance',
-    from: '2023',
-    to: 'Present',
-    jobTitle: 'Freelance Developer & Designer',
-    description: 'Working on various client projects and personal ventures',
-  },
-  // Add more experience items as needed
-];
 
 const tools = [
   {
@@ -49,16 +39,16 @@ export default function Page() {
       <div className="container flex flex-col items-center">
         <Navbar />
         <main className="flex flex-col items-center px-4">
-          <section className="w-full flex flex-col lg:flex-row pb-4 md:mb-4 mb-8 lg:mb-12">
+          <section className="mb-8 flex w-full flex-col pb-4 md:mb-4 lg:mb-12 lg:flex-row">
             <div className="w-full lg:mx-auto">
-              <div className="w-full h-40 lg:h-48 relative">
-                <div className="rounded-2xl absolute left-1/2 w-full max-w-xl inset-0 -translate-x-1/2 bg-neutral-100">
-                  <div className="w-full max-w-nav mx-auto left-1/2 -translate-x-1/2 absolute -bottom-12">
+              <div className="relative h-40 w-full lg:h-48">
+                <div className="absolute inset-0 left-1/2 w-full max-w-xl -translate-x-1/2 rounded-2xl bg-neutral-100">
+                  <div className="max-w-nav absolute -bottom-12 left-1/2 mx-auto w-full -translate-x-1/2">
                     <Image
                       src="/portrait.jpg"
                       width={96}
                       height={96}
-                      className="object-cover ml-9 aspect-square rounded-full border-4 border-white dark:border-black"
+                      className="ml-9 aspect-square rounded-full border-4 border-white object-cover dark:border-black"
                       alt="Profile picture"
                     />
                   </div>
@@ -95,14 +85,14 @@ export default function Page() {
             </div>
 
             <div className="mt-12 w-full">
-              <h3 className="text-lg font-semibold mb-6">Experience</h3>
+              <h3 className="mb-6 text-lg font-semibold">Experience</h3>
               {/* Add Experience section */}
             </div>
 
             <div className="mt-12 w-full">
-              <h3 className="text-lg font-semibold mb-6">Tools I Use</h3>
+              <h3 className="mb-6 text-lg font-semibold">Tools I Use</h3>
               <TooltipProvider>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
                   {tools.map((tool) => (
                     <Tooltip key={tool.name}>
                       <TooltipTrigger asChild>
@@ -110,7 +100,7 @@ export default function Page() {
                           href={tool.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors"
+                          className="flex items-center rounded-lg border border-neutral-200 p-4 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-700"
                         >
                           <Image
                             src={tool.icon}
