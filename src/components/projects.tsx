@@ -32,7 +32,8 @@ export const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
         >
-          Projects
+          Stuff I&apos;ve{' '}
+          <span className="font-bold dark:text-[#e8ff85]">Built</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 100 }}
