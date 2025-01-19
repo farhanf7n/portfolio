@@ -8,14 +8,14 @@ import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
-import { Contact } from '@/components/sections/contact/contact';
-import { Faq } from '@/components/sections/faq/faq';
-import { Pricing } from '@/components/sections/pricing/pricing';
-import { Services } from '@/components/sections/services/services';
-import Testimonial from '@/components/sections/testimonial/testimonial';
+import { Contact } from '@/components/sections/contact';
+import { Faq } from '@/components/sections/faq';
+import { Pricing } from '@/components/sections/pricing';
+import { Services } from '@/components/sections/services';
+import Testimonial from '@/components/sections/testimonial';
+import { ThreeImages } from '@/components/sections/threeImages';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { ThreeImages } from '@/components/threeImages';
 
 const Home = async () => {
   return (
@@ -58,7 +58,6 @@ const Home = async () => {
         <Pricing />
         <Faq />
         <Contact />
-        {/* <Experience /> */}
         <Footer />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />

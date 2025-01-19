@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-import TestimonialColumn from './testimonialColumn';
+import TestimonialColumn from '@/components/sections/testimonialColumn';
 
 const testimonials = [
   {
