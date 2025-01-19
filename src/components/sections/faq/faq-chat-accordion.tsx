@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/enforces-negative-arbitrary-values */
 'use client';
 
 import * as React from 'react';
@@ -66,8 +67,8 @@ export function FaqAccordion({
                   {item.icon && (
                     <span
                       className={cn(
-                        'absolute bottom-6',
-                        item.iconPosition === 'right' ? 'right-0' : 'left-0'
+                        'absolute -top-[10px] bottom-6',
+                        item.iconPosition === 'right' ? 'right-1' : 'left-1'
                       )}
                       style={{
                         transform:
