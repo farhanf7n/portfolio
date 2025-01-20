@@ -74,7 +74,7 @@ const BlurFadeText = ({
     visible: { y: -yOffset, opacity: 1, filter: 'blur(0px)' },
   };
   const combinedVariants = variant || defaultVariants;
-  const characters = useMemo(() => [...text], [text]);
+  const characters = useMemo(() => text.split(''), [text]);
 
   if (animateByCharacter) {
     return (
