@@ -1,5 +1,9 @@
 'use client';
 
+import styles from './TofuPolaroid.module.css';
+
+import type { ComponentProps } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { clsx } from 'clsx';
 import {
   animate,
@@ -9,9 +13,7 @@ import {
   useTransform,
 } from 'motion/react';
 import Image from 'next/image';
-import type { ComponentProps } from 'react';
-import { useCallback, useEffect, useState } from 'react';
-import styles from './TofuPolaroid.module.css';
+
 import tofu1 from '../../../public/tofu/1.jpg';
 import tofu2 from '../../../public/tofu/2.jpg';
 import tofu3 from '../../../public/tofu/3.jpg';
