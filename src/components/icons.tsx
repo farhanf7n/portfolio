@@ -256,10 +256,6 @@ export const Icons = {
       viewBox="0 0 159 194"
       fill="none"
     >
-      <script
-        xmlns=""
-        src="chrome-extension://hoklmmgfnpapgjgcpechhaamimifchmp/frame_ant/frame_ant.js"
-      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
