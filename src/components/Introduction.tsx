@@ -35,10 +35,11 @@ export function Introduction({
               alt="Farhan Ahmed"
               className="pointer-events-none absolute inset-0 size-full overflow-hidden rounded-lg object-cover"
               priority
-              quality={95}
+              quality={100}
               src={portrait}
               title="Farhan Ahmed"
               width="80"
+              height="80"
             />
           </motion.div>
           <TofuPolaroid className="bottom-[-4.35rem] right-[-3.65rem] w-[8.5rem]" />
