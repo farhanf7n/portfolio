@@ -1,9 +1,10 @@
-import { Navbar } from '@/components/navbar';
-import { Footer } from '@/components/footer';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { motion } from 'framer-motion';
+
+import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
 import { SectionHeading } from '@/components/section-heading';
 import { Skills } from '@/components/skills';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function AboutPage() {
   return (
