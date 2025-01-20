@@ -147,7 +147,7 @@ export function TofuPolaroid({
             return (
               <Image
                 alt="Tofu, my cat"
-                className="absolute inset-0 h-full w-full"
+                className="absolute inset-0 size-full"
                 key={index}
                 priority
                 src={photo}
@@ -161,7 +161,7 @@ export function TofuPolaroid({
             <Image
               alt=""
               aria-hidden
-              className="absolute inset-0 h-full w-full opacity-0"
+              className="absolute inset-0 size-full opacity-0"
               key={index}
               src={photo}
               width="80"

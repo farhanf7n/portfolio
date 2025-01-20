@@ -1,8 +1,8 @@
 'use client';
 
-import { clsx } from 'clsx';
-import { useCallback, useState } from 'react';
 import type { ChangeEvent, ComponentProps } from 'react';
+import { useCallback, useState } from 'react';
+import { clsx } from 'clsx';
 
 interface CustomizableTitleSelectProps extends ComponentProps<'span'> {
   /**
@@ -39,10 +39,10 @@ function CustomizableTitleSelect({
     >
       <span aria-hidden className="pointer-events-none">
         {value}
-        <span className="text-gray-300 dark:text-gray-550">*</span>
+        <span className="dark:text-gray-550 text-gray-300">*</span>
       </span>
       <select
-        className="absolute inset-0 h-full w-full cursor-context-menu opacity-0"
+        className="absolute inset-0 size-full cursor-context-menu opacity-0"
         onChange={handleChange}
         value={value}
       >
