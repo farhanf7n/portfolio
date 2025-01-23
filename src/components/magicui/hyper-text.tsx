@@ -8,29 +8,19 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 interface HyperTextProps {
-  /**
-   *
-   */
-  animateOnLoad?: boolean;
-  /**
-   *
-   */
-  className?: string;
-  /**
-   *
-   */
-  duration?: number;
-  /**
-   *
-   */
-  framerProps?: Variants;
-  /**
-   *
-   */
+  /** Text to be animated */
   text: string;
+  /** Animation duration in milliseconds */
+  duration?: number;
+  /** Custom Framer Motion variants */
+  framerProps?: Variants;
+  /** Additional CSS classes */
+  className?: string;
+  /** Whether to animate on initial load */
+  animateOnLoad?: boolean;
 }
 
-const alphabets = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 const getRandomInt = (max: number) => Math.floor(Math.random() * max);
 
@@ -45,10 +35,10 @@ export default function HyperText({
   className,
   animateOnLoad = true,
 }: HyperTextProps) {
-  const [displayText, setDisplayText] = useState(text.split(''));
+  const [displayText, setDisplayText] = useState<string[]>(text.split(''));
   const [trigger, setTrigger] = useState(false);
-  const interations = useRef(0);
-  const isFirstRender = useRef(true);
+  const interations = useRef<number>(0);
+  const isFirstRender = useRef<boolean>(true);
 
   const triggerAnimation = () => {
     interations.current = 0;
