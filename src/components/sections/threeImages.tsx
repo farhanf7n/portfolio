@@ -1,79 +1,59 @@
 'use client';
 import type { ComponentProps } from 'react';
-import { useRef } from 'react';
 import { clsx } from 'clsx';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export function ThreeImages({
   className,
   ...props
 }: ComponentProps<'section'>) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start end', 'end start'],
-  });
+  const imageVariants = {
+    whileHover: {
+      scale: 1.1,
+      rotate: 0,
+      zIndex: 100,
+    },
+    whileTap: {
+      scale: 1.1,
+      rotate: 0,
+      zIndex: 100,
+    },
+  };
 
-  const rotate1 = useTransform(scrollYProgress, [0, 1], [-4, 0]);
-  const rotate2 = useTransform(scrollYProgress, [0, 1], [-4, 0]);
-  const rotate3 = useTransform(scrollYProgress, [0, 1], [4, 0]);
-  const rotate4 = useTransform(scrollYProgress, [0, 1], [4, 0]);
+  const images = [
+    '/gallery1.jpg',
+    '/gallery2.jpg',
+    '/gallery3.jpg',
+    '/gallery4.jpg',
+    '/gallery5.jpg',
+  ];
 
   return (
-    <section className={clsx(className, 'content my-14')} {...props} ref={ref}>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <motion.div
-          style={{ rotate: rotate1 }}
-          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
-        >
-          <Image
-            className="size-full rounded-md object-cover"
-            src="/gallery1.jpg"
-            alt="About 1"
-            width={260}
-            height={285}
-          />
-        </motion.div>
-
-        <motion.div
-          style={{ rotate: rotate2 }}
-          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
-        >
-          <Image
-            className="size-full rounded-md object-cover"
-            src="/gallery2.jpg"
-            alt="About 2"
-            width={260}
-            height={285}
-          />
-        </motion.div>
-
-        <motion.div
-          style={{ rotate: rotate3 }}
-          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
-        >
-          <Image
-            className="size-full rounded-md object-cover"
-            src="/gallery3.jpg"
-            alt="About 3"
-            width={260}
-            height={285}
-          />
-        </motion.div>
-
-        <motion.div
-          style={{ rotate: rotate4 }}
-          className="overflow-hidden rounded-md border border-gray-200/50 p-3 dark:border-white/30"
-        >
-          <Image
-            className="size-full rounded-md object-cover"
-            src="/gallery4.jpg"
-            alt="About 4"
-            width={260}
-            height={285}
-          />
-        </motion.div>
+    <section className={clsx(className, 'content my-14')} {...props}>
+      <div className="relative flex h-full flex-col items-start justify-center gap-10">
+        <div className="flex flex-row">
+          {images.map((image, idx) => (
+            <motion.div
+              variants={imageVariants}
+              key={'images-first' + idx}
+              style={{
+                rotate: Math.random() * 20 - 10,
+              }}
+              whileHover="whileHover"
+              whileTap="whileTap"
+              className="-mr-4 mt-4 shrink-0 overflow-hidden rounded-xl border border-neutral-100 bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800"
+            >
+              <Image
+                src={image}
+                alt={image}
+                height={198}
+                width={350}
+                className="h-[198px] w-[350px] shrink-0 rounded-lg object-cover md:size-40"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
