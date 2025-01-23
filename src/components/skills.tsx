@@ -1,9 +1,9 @@
 'use client';
 
+import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 
 import { skillsData } from '@/lib/data';
-import { Fragment } from 'react';
 
 export const Skills = () => {
   return (
@@ -17,9 +17,9 @@ export const Skills = () => {
       viewport={{
         once: true,
       }}
-      className="flex max-w-xl w-full flex-wrap justify-between gap-10 px-5 sm:justify-center sm:px-0 lg:justify-between"
+      className="flex w-full max-w-xl flex-wrap justify-between gap-10 px-5 sm:justify-center sm:px-0 lg:justify-between"
     >
-      <div className="flex overflow-hidden my-14 [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
+      <div className="my-14 flex overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
         <motion.div
           animate={{
             x: [0, '-50%'],
@@ -38,7 +38,7 @@ export const Skills = () => {
               {skillsData.map(({ icon }) => (
                 <div
                   key={icon.type.name}
-                  className="flex-none w-12 h-12 flex items-center justify-center"
+                  className="flex size-12 flex-none items-center justify-center"
                 >
                   {icon}
                 </div>
