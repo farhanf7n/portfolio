@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
-import { SectionHeading } from '@/components/section-heading';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -10,9 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="pointer-events-none absolute top-0 h-72 w-full overflow-hidden md:h-80 lg:h-96">
-        <div className="content relative h-full">
-          {/* Add your background aura effect if needed */}
-        </div>
+        <div className="content relative h-full"></div>
       </div>
       <div className="container flex flex-col items-center">
         <Navbar />
@@ -23,7 +20,6 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
           >
-            <SectionHeading heading="About Me" />
             <div className="-mt-5 max-w-2xl text-center leading-7">
               <p className="mb-4">
                 I&apos;m Farhan Ahmed, I&apos;m a Freelance Developer & Designer
