@@ -25,228 +25,438 @@ export const links = [
 
 export const projectsData = [
   {
-    title: 'x0-GPT - Ai powered brain',
-    href: 'https://x0-gpt.devwtf.in',
-    dates: 'Jul 2024 - Aug 2024',
+    title: 'EZSauce',
+    href: 'https://ezsauce.netlify.app/',
     featured: true,
     description:
-      "x0-GPT is a free AI tool that lets you interact with websites, PDFs, and documents in real-time. It provides quick answers and insights directly from your chosen sources, all while keeping your data private. It's easy to use and versatile, making information more accessible than ever.",
+      'Explore selected and chosen items that will improve your productivity and help you grow as a developer and designer. Curated Resource Collection - Hand-picked tools and resources for developers/designers.\n\n\n Smart Categorization - Resources organized by categories (Design Stuff, Tutorials, Templates, etc.) Dynamic Search - Real-time filtering across names, tags, and categories.',
     technologies: [
-      'Next.js',
+      'React.js',
       'Typescript',
-      'Postgres',
-      'Upstash rag-chat sdk',
-      'Vercel ai sdk',
-      'Supabase',
       'TailwindCSS',
-      'Acternity UI',
-      'Shadcn UI',
-      'Magic UI',
+      'React Hooks',
+      'Cloudinary API',
     ],
     links: [
       {
         type: 'Website',
-        href: 'https://x0-gpt.devwtf.in',
+        href: 'https://ezsauce.netlify.app/',
         icon: <Icons.globe className="size-3" />,
       },
       {
         type: 'Source',
-        href: 'https://git.new/pvOF6aq',
+        href: 'https://github.com/farhanf7n/ezsauce',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: 'https://i.imgur.com/ffeIgzW.png',
+    image: 'https://i.imgur.com/SbQ9Kyw.png',
     video: '',
   },
   {
-    title: 'Profanity Validator - a SDK for profanity moderation',
-    href: 'https://profanity.devwtf.in',
-    dates: '28th Oct 2024 - 29th Oct 2024',
+    title: 'Advanced Portfolio',
+    href: 'https://animation-portfolio-fa.vercel.app/',
     featured: true,
     description:
-      "If you run a web app with any kind of user generated content, it's your responsibility to keep things in order. That's a challenge if your users keep dropping F-bombs like confetti at a toddler's birthday party. That's what this SDK actually solves but with more moderation capabilities.",
+      'A modern, interactive portfolio website built with React, showcasing professional experience and skills.\n\nThe project features: Smooth animations and transitions using Framer Motion and GSAP, Interactive work experience modal with hover effects, Responsive design for all screen sizes, Clean and minimalist UI.',
     technologies: [
       'React',
       'Next.js',
       'Typescript',
-      'NodeJs',
       'NPM',
       'react-hook-forms',
       'zod',
       'Shadcn UI',
+      'Framer Motion',
+      'GSAP',
     ],
     links: [
       {
         type: 'Website',
-        href: 'https://profanity.devwtf.in',
+        href: 'https://frhan.vercel.app/',
         icon: <Icons.globe className="size-3" />,
       },
       {
         type: 'Source',
-        href: 'https://l.devwtf.in/profanity',
+        href: 'https://github.com/farhanf7n/animation-portfolio',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: 'https://i.imgur.com/KCJmPOa.png',
+    image: 'https://i.imgur.com/Y3MeBkp.png',
     video: '',
   },
   {
-    title: 'Acter - Ai to convert your ideas into UI',
-    href: 'https://acter.devwtf.in',
-    // dates: "Mar 2024 - May 2024",
+    title: 'Layers - Home Page',
+    href: 'https://project-management-fn.vercel.app/',
     featured: true,
     active: true,
     description:
-      'Acter is an Ai tool which will help you to convert your ideas into great UI and it supports a huge number of popular UI libraries and frameworks which will make your work easier to modify any existing code from any library. And also you can generate your UI using a particular framework and UI library.',
-    technologies: [
-      'Next.js',
-      'Typescript',
-      'Xata DB',
-      'RAG',
-      'Vercel ai sdk',
-      'Postgress',
-    ],
+      'I developed a dynamic and visually appealing landing page for a Figma-like company using React and Framer Motion. The page features smooth animations and an engaging user interface, showcasing the brand&apos;s functionality and creative tools.',
+    technologies: ['React.js', 'JSX', 'TailwindCSS', 'Framer Motion'],
     links: [
       {
         type: 'Website',
-        href: 'https://acter.devwtf.in',
+        href: 'https://project-management-fn.vercel.app/',
         icon: <Icons.globe className="size-3" />,
       },
       {
         type: 'Source',
-        href: 'https://l.devwtf.in/acter',
+        href: 'https://github.com/farhanf7n/project-management-app',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: 'https://i.imgur.com/JwDi96s.png',
+    image: 'https://i.imgur.com/rMnH4vq.png',
     video: '',
   },
   {
-    title: 'Evently - Chromium extension for event auditing',
-    href: 'https://evently.devwtf.in',
-    dates: 'Sept 2024 - Sept 2024',
+    title: 'Sub Reddits',
+    href: 'https://redsubslist.netlify.app/',
     featured: false,
     description:
-      'Your essential companion for event auditing. It features a straightforward countdown timer that can be displayed in new tabs within Chromium-based browsers, providing users with a simple yet effective way to track time until their event.',
-    technologies: [
-      'Next.js',
-      'Typescript',
-      'React',
-      'TailwindCSS',
-      'Shadcn UI',
-    ],
+      'A browser-based Reddit client that displays multiple subreddits in customizable, side-by-side lanes. Users can add new subreddit feeds, with each lane showing post titles, authors, and vote counts fetched from the Reddit JSON API.',
+    technologies: ['React.js', 'Typescript', 'TailwindCSS'],
     links: [
       {
         type: 'Website',
-        href: 'https://evently.devwtf.in',
+        href: 'https://redsubslist.netlify.app/',
         icon: <Icons.globe className="size-3" />,
       },
       {
         type: 'Source',
-        href: 'https://git.new/ESRt29k',
+        href: 'https://github.com/farhanf7n/redsubslist',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: 'https://i.imgur.com/JI752LF.png',
+    image: 'https://i.imgur.com/KYmMgUQ.png',
     video: '',
   },
   {
-    title: 'FPC - Freelancer Price Calculator',
-    href: 'https://freelance-price-calculator.devwtf.in/',
-    dates: 'Sept 2024 - Sept 2024',
+    title: 'Verification Web App',
+    href: 'https://image-capture-s1.netlify.app/',
     featured: false,
     description:
-      'A powerful and intuitive tool for freelancers to calculate project prices and convert currencies realtime.',
-    technologies: [
-      'Next.js',
-      'Currency Api',
-      'Typescript',
-      'React',
-      'TailwindCSS',
-      'Shadcn UI',
-    ],
+      'I developed a LinkedIn-like verification module using pure Vanilla JavaScript for functionality and Vanilla CSS for styling. This module replicates the seamless user experience of professional verification systems, offering an intuitive and efficient design.',
+    technologies: ['Vanilla JS', 'HTML', 'CSS'],
     links: [
       {
         type: 'Website',
-        href: 'https://freelance-price-calculator.devwtf.in/',
+        href: 'https://image-capture-s1.netlify.app/',
         icon: <Icons.globe className="size-3" />,
       },
       {
         type: 'Source',
-        href: 'https://git.new/tValGOy',
+        href: 'https://github.com/farhanf7n/image-capture-task',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: 'https://i.imgur.com/1zeZewW.png',
+    image: 'https://i.imgur.com/F89EH47.png',
     video: '',
   },
   {
-    title: 'Telegram Member Adder',
-    // href: "https://github.com/SkidGod4444/TeleGram-Member-Adder",
-    dates: 'Apr 2023 - Apr 2023',
-    featured: false,
-    archived: true,
+    title: 'Time Related Tools',
+    href: 'https://allclocks.netlify.app/',
+    featured: true,
     description:
-      'A python code to scrap telegram group members data and adds them to another telegram group..',
-    technologies: ['Scrapping', 'Telegram API', 'Python'],
+      'Time related tools to help you stay productive and organized.',
+    technologies: ['Vanilla JS', 'CSS', 'HTML'],
     links: [
       {
+        type: 'Website',
+        href: 'https://allclocks.netlify.app/',
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
         type: 'Source',
-        href: 'https://github.com/SkidGod4444/TeleGram-Member-Adder',
+        href: 'https://github.com/farhanf7n/time-app',
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: '',
-    video: '',
-  },
-  {
-    title: 'Sputnik - My first python discord bot',
-    // href: "https://github.com/SkidGod4444/TeleGram-Member-Adder",
-    dates: 'Oct 2022 - Sept 2023',
-    featured: false,
-    archived: true,
-    description:
-      'All in one python discord bot. Source code was migrated from Replit to Github later.',
-    technologies: ['Discord.py', 'Discord API', 'Python', 'Replit', 'Json DB'],
-    links: [
-      {
-        type: 'Source',
-        href: 'https://github.com/SkidGod4444/Sputnik',
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: '',
+    image: 'https://i.imgur.com/QE5jPOE.png',
     video: '',
   },
 ] as const;
 
-export const CLIENTWORKS = [
+export const uiWork = [
   {
-    title: 'BOXCHAT - One chat for all ai models',
-    dates: '9th Sep 2024 - 22nd Sep 2024',
-    worktype: 'Fullstack',
-    testimonial:
-      'https://firebasestorage.googleapis.com/v0/b/archives-63571.appspot.com/o/portfolio%2Ftestimonials%2Fboxchat-testimonial.mp4?alt=media&token=51be6968-e40f-4074-a0f7-026f98930671',
+    title: 'Coruse Creator Landing Page',
+    href: 'https://dribbble.com/shots/23446136-Coruse-Creator-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Coruse%20Creator%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Coruse%20Creator%20Landing%20Page&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'A sleek landing page for users to sell courses, build communities, monetize memberships, with clean navigation and features.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23446136-Coruse-Creator-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Coruse%20Creator%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Coruse%20Creator%20Landing%20Page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/HtWXxxU.png',
+    video: '',
+  },
+  {
+    title: 'EZSauce',
+    href: 'https://dribbble.com/shots/23763780-EZSauce-Find-Everything-At-One-Place',
     featured: true,
     description:
-      'BOXCHAT is a SAAS that lets you interact with websites, PDFs, and documents in real-time. It provides quick answers and insights directly from your chosen sources, it gives multiple ai models feature to sync your questions and get different responses at a time.',
-    features:
-      'Playground feature like **Vercel**. Chat feature like **ChatGPT**. Text to image generation.',
-    technologies: [
-      'Next.js',
-      'Typescript',
-      'Postgres',
-      'Upstash rag-chat sdk',
-      'Vercel ai sdk',
-      'Supabase',
-      'TailwindCSS',
-      'Acternity UI',
-      'Shadcn UI',
-      'Magic UI',
+      'Explore selected and chosen items that will improve your productivity and help you grow as a developer and designer.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23763780-EZSauce-Find-Everything-At-One-Place',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+      {
+        type: 'Website',
+        href: 'https://ezsauce.netlify.app/',
+        icon: <Icons.globe className="size-3" />,
+      },
     ],
-    image: '',
-    video:
-      'https://firebasestorage.googleapis.com/v0/b/archives-63571.appspot.com/o/portfolio%2Fboxchat-preview.mp4?alt=media&token=e18c270b-dbce-4588-838e-2162c2de4bd8',
+    image: 'https://i.imgur.com/Z8teOpy.png',
+    video: '',
+  },
+  {
+    title: 'Fornify - Computer Online Store',
+    href: 'https://dribbble.com/shots/23477811-Shop-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Shop%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Shop%20Landing%20Page&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'A modern e-commerce landing page featuring a sleek layout, best-sellers section, trusted brand logos, and customer-focused details.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23477811-Shop-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Shop%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Shop%20Landing%20Page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/0GdCD9f.png',
+    video: '',
+  },
+  {
+    title: 'Dashboard',
+    href: 'https://dribbble.com/shots/23486791-Dashboard-01?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Dashboard%20-%2001&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Dashboard%20-%2001&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'A clean, interactive dashboard design showcasing key metrics, user analytics, real-time data visualization, and customizable widget options.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23486791-Dashboard-01?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Dashboard%20-%2001&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Dashboard%20-%2001&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/PpunDhe.png',
+    video: '',
+  },
+  {
+    title: 'Twitter Banner',
+    href: 'https://dribbble.com/shots/23484973-Twitter-Banner?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Twitter%20Banner&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Twitter%20Banner&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'A clean, interactive dashboard design showcasing key metrics, user analytics, real-time data visualization, and customizable widget options.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23484973-Twitter-Banner?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Twitter%20Banner&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Twitter%20Banner&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/IkVqbX2.png',
+    video: '',
+  },
+  {
+    title: 'Featured Blogs',
+    href: 'https://dribbble.com/shots/23499960-Blog-Feature?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20Feature&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20Feature&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'Visually engaging featured blogs page highlighting articles with images, titles, excerpts, author details, categories, and publication dates.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23499960-Blog-Feature?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20Feature&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20Feature&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/5hpPlYz.png',
+    video: '',
+  },
+  {
+    title: 'Bunch of modals',
+    href: 'https://dribbble.com/shots/23509825-Bunch-of-modals?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Bunch%20of%20modals&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Bunch%20of%20modals&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'A modern multi-step UI design featuring plan selection, seat adjustment, payment details, email verification, onboarding, and login forms.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23509825-Bunch-of-modals?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Bunch%20of%20modals&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Bunch%20of%20modals&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/yVxlEnS.png',
+    video: '',
+  },
+  {
+    title: 'Multipurpose Dashboard',
+    href: 'https://dribbble.com/shots/23517739-Fornify-Dashboard?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Fornify%20-%20Dashboard&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Fornify%20-%20Dashboard&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'A clean, user-friendly dashboard displaying categorized airdrop campaigns, user progress, rewards, navigation, and filters for streamlined task management.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23517739-Fornify-Dashboard?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Fornify%20-%20Dashboard&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Fornify%20-%20Dashboard&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/RV0BAr4.png',
+    video: '',
+  },
+  {
+    title: 'ManyAPIs Redesigned page',
+    href: 'https://dribbble.com/shots/23522992-ManyAPIs-Redesigned-page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=ManyAPIs%20Redesigned%20page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=ManyAPIs%20Redesigned%20page&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'A place where you can find the best APIs for your project. We have a wide range of APIs from different categories.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23522992-ManyAPIs-Redesigned-page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=ManyAPIs%20Redesigned%20page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=ManyAPIs%20Redesigned%20page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/q0xnymP.png',
+    video: '',
+  },
+  {
+    title: 'Travel Booking App Components',
+    href: 'https://dribbble.com/shots/23547630-Travel-Booking-App-Components?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Travel%20Booking%20App%20Components&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Travel%20Booking%20App%20Components&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'Plan your journey seamlessly: choose destinations, view travel paths, explore city highlights, check traffic, apply tags, and book trains effortlessly!',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23547630-Travel-Booking-App-Components?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Travel%20Booking%20App%20Components&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Travel%20Booking%20App%20Components&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/dswM8F7.png',
+    video: '',
+  },
+  {
+    title: 'Pitch Practice',
+    href: 'https://dribbble.com/shots/23565822-AI-Based-Chat-App-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=AI%20Based%20Chat%20App%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=AI%20Based%20Chat%20App%20Landing%20Page&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'The future of sales mastery. Built for financial advisors, our AI-driven platform gives you a competitive edge  with real-time role-play, targeted microlearning, and invaluable industry connections.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23565822-AI-Based-Chat-App-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=AI%20Based%20Chat%20App%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=AI%20Based%20Chat%20App%20Landing%20Page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/yIbgDP9.png',
+    video: '',
+  },
+  {
+    title: 'Electrical Engineering Consultants',
+    href: 'https://dribbble.com/shots/23573282-Electrical-Engineering-Consultants-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Electrical%20Engineering%20Consultants%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Electrical%20Engineering%20Consultants%20Landing%20Page&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'Smaart Power delivers innovative, value-driven engineering solutions worldwide, blending expertise, project management, and technology for tailored, budget-friendly client results.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23573282-Electrical-Engineering-Consultants-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Electrical%20Engineering%20Consultants%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Electrical%20Engineering%20Consultants%20Landing%20Page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/iURVW4g.png',
+    video: '',
+  },
+  {
+    title: 'Kids Coloring Page',
+    href: 'https://dribbble.com/shots/23630740-Kids-Coloring-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Kids%20Coloring%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Kids%20Coloring%20Page&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'Smaart Power delivers innovative, value-driven engineering solutions worldwide, blending expertise, project management, and technology for tailored, budget-friendly client results.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23630740-Kids-Coloring-Page?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Kids%20Coloring%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Kids%20Coloring%20Page&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/PWmTjyi.png',
+    video: '',
+  },
+  {
+    title: 'Portfolio',
+    href: 'https://dribbble.com/shots/23593480-Portfolio?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Portfolio&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Portfolio&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'I designed my portfolio, drawing initial inspiration from an Awwwards site. Later, I customized it with unique tweaks and features to perfectly reflect my personal style.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23593480-Portfolio?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Portfolio&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Portfolio&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+      {
+        type: 'Website',
+        href: 'https://frhan.vercel.app/',
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/rVE4UKK.png',
+    video: '',
+  },
+  {
+    title: 'Settings Dashboard',
+    href: 'https://dribbble.com/shots/23439373-Settings?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Settings&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Settings&utm_medium=Social_Share',
+    featured: false,
+    description:
+      'This settings dashboard provides application management options, including general details, branching, taglines, advanced settings, and administrative permissions, alongside navigation to other functional modules.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/23439373-Settings?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Settings&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Settings&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/atIAlxH.png',
+    video: '',
+  },
+  {
+    title: 'Policy-Wire Redesigned',
+    href: 'https://dribbble.com/shots/25517576-Blog-Article-Website-Redesign?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20%26%20Article%20Website%20Redesign&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20%26%20Article%20Website%20Redesign&utm_medium=Social_Share',
+    featured: true,
+    description:
+      'This settings dashboard provides application management options, including general details, branching, taglines, advanced settings, and administrative permissions, alongside navigation to other functional modules.',
+    technologies: ['Figma'],
+    links: [
+      {
+        type: 'Dribbble',
+        href: 'https://dribbble.com/shots/25517576-Blog-Article-Website-Redesign?utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20%26%20Article%20Website%20Redesign&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=farhanf7n&utm_content=Blog%20%26%20Article%20Website%20Redesign&utm_medium=Social_Share',
+        icon: <Icons.dribbble className="size-3" />,
+      },
+    ],
+    image: 'https://i.imgur.com/vysI2IM.png',
+    video: '',
   },
 ];
 
