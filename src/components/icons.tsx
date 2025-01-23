@@ -5,6 +5,7 @@ import {
   ChevronDown,
   Cog,
   Download,
+  Dribbble,
   ExternalLink,
   Github,
   GlobeIcon,
@@ -19,6 +20,7 @@ import {
 
 export const Icons = {
   moveUpRight: MoveUpRight,
+  dribbble: Dribbble,
   sun: Sun,
   moon: Moon,
   arrowRight: ArrowRight,
