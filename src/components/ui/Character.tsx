@@ -1,6 +1,6 @@
-import { clsx } from 'clsx';
-import type { CSSProperties, ComponentProps } from 'react';
+import type { ComponentProps, CSSProperties } from 'react';
 import { useMemo } from 'react';
+import { clsx } from 'clsx';
 
 export interface CharactersProps
   extends Omit<ComponentProps<'span'>, 'children'> {
@@ -22,7 +22,10 @@ export function Characters({
   className,
   ...props
 }: CharactersProps) {
-  const characters = useMemo(() => [...children], [children]);
+  const characters = useMemo(
+    () => (typeof children === 'string' ? children.split('') : []),
+    [children]
+  );
 
   return (
     <span
