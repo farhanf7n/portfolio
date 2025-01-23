@@ -208,10 +208,44 @@ export function Introduction({
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#00AC3A]"></span>
             <span className="relative inline-flex size-2 rounded-full bg-[#00CA50]"></span>
           </span>
-          <span className="text-muted-foreground text-sm text-[#178D00]">
+          <span className="text-muted-foreground text-sm text-[#178D00] dark:text-[#00ac3a]">
             Available for new project
           </span>
         </motion.div>
+      </div>
+
+      <div className="my-10 flex scroll-mt-96 flex-col gap-4 text-center sm:mt-20">
+        <motion.h1
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
+        >
+          About <span className="font-bold dark:text-[#e8ff85]">Me</span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="text-muted-foreground max-w-[56ch] text-left leading-loose"
+        >
+          I&apos;m Farhan Ahmed, a curious designer, coder. Currently working as
+          a Freelance Developer & Designer, but always exploring the limitless
+          possibilities of creativity and technology.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="text-muted-foreground max-w-[56ch] text-left leading-loose"
+        >
+          I thrive on transforming ideas into reality, whether it&apos;s
+          crafting digital interfaces, designing immersive visuals, or building
+          websites that feel effortless to use.
+        </motion.p>
       </div>
     </section>
   );
