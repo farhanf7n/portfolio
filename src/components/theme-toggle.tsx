@@ -1,9 +1,10 @@
 'use client';
 
+import type { ComponentProps } from 'react';
 import { clsx } from 'clsx';
 import type { Transition, Variants } from 'motion/react';
 import { motion } from 'motion/react';
-import type { ComponentProps } from 'react';
+
 import { useSystemTheme } from '../lib/use-system-theme';
 
 const TRANSITION_DURATION = 0.6;
@@ -56,7 +57,7 @@ export function ThemeToggle({ className, ...props }: ComponentProps<'button'>) {
       {...props}
     >
       <svg
-        className="flex-none transition-colors text-black dark:text-white"
+        className="flex-none text-black transition-colors dark:text-white"
         height="24"
         role="presentation"
         width="24"
