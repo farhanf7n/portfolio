@@ -3,7 +3,6 @@ import styles from './layout.module.css';
 import clsx from 'clsx';
 
 import { Footer } from '@/components/footer';
-import { Intro } from '@/components/intro';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
@@ -44,10 +43,9 @@ const Home = async () => {
           </div>
         </div>
       </div>
-      <div className="container flex flex-col items-center">
+      <div className="container relative flex flex-col items-center">
         <Navbar />
         <Introduction />
-        <Intro />
         <Skills />
         <SectionDivider />
         <ThreeImages />
