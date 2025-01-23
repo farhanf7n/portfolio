@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-import { ClientWorksCard } from './client-works-card';
+import Link from 'next/link';
 
 import BlurFade from '@/components/magicui/blur-fade';
 import {
@@ -13,7 +12,7 @@ import {
 } from '@/components/magicui/tabs';
 import { ProjectCard } from '@/components/project-card';
 import { useSectionInView } from '@/hooks/use-section-in-view';
-import { CLIENTWORKS, projectsData } from '@/lib/data';
+import { projectsData, uiWork } from '@/lib/data';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,14 +48,14 @@ export const Projects = () => {
 
         <BlurFade className="mt-2" delay={BLUR_FADE_DELAY * 11}>
           <Tabs
-            defaultValue="myworks"
+            defaultValue="Projects"
             className="flex w-full flex-col items-center justify-center"
           >
             <TabsList className="mb-4 grid w-full grid-cols-2">
-              <TabsTrigger value="myworks">My Works</TabsTrigger>
-              <TabsTrigger value="clientworks">Client Works</TabsTrigger>
+              <TabsTrigger value="Projects">Projects</TabsTrigger>
+              <TabsTrigger value="UiWork">Ui Designs</TabsTrigger>
             </TabsList>
-            <TabsContent value="myworks">
+            <TabsContent value="Projects">
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className="w-full space-y-12">
                   <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-4 sm:grid-cols-2">
@@ -83,36 +82,45 @@ export const Projects = () => {
                 </div>
               </BlurFade>
             </TabsContent>
-            <TabsContent value="clientworks">
+            <TabsContent value="UiWork">
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className="w-full space-y-12">
-                  <div className="mx-auto mt-8 grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-                    {CLIENTWORKS.filter((project) => project.featured).map(
-                      (project, id) => (
+                  <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
+                    {uiWork
+                      .filter((project) => project.featured)
+                      .map((project, id) => (
                         <BlurFade
                           key={project.title}
-                          delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+                          delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                         >
-                          <ClientWorksCard
+                          <ProjectCard
+                            href={project.href}
                             key={project.title}
                             title={project.title}
-                            worktype={project.worktype}
                             description={project.description}
-                            dates={project.dates}
                             tags={project.technologies}
                             image={project.image}
                             video={project.video}
-                            fatures={project.features}
-                            testimonial={project.testimonial}
+                            links={project.links}
                           />
                         </BlurFade>
-                      )
-                    )}
+                      ))}
                   </div>
                 </div>
               </BlurFade>
             </TabsContent>
           </Tabs>
+
+          <div className="mt-[10px] flex justify-center">
+            <Link
+              className="cubic-btn h-9 w-full justify-center rounded-md"
+              href="/projects"
+            >
+              <span data-text="View All">
+                <p className="inner">View All</p>
+              </span>
+            </Link>
+          </div>
         </BlurFade>
       </section>
     </>
