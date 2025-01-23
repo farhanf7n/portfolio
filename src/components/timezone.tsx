@@ -1,8 +1,8 @@
 'use client';
-import { clsx } from 'clsx';
 import type { ComponentProps } from 'react';
+import { useEffect, useState } from 'react';
+import { clsx } from 'clsx';
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 /**
  * An introduction section with a short bio.
@@ -62,9 +62,9 @@ export function TimeZone({ className, ...props }: ComponentProps<'section'>) {
           transition={{
             delay: 0.3,
           }}
-          className="flex items-center gap-2 sm:backdrop-blur-sm rounded-md"
+          className="flex items-center gap-2 rounded-md sm:backdrop-blur-sm"
         >
-          <span className="text-muted-foreground text-xs text-[#178D00] flex items-center">
+          <span className="text-muted-foreground flex items-center text-xs text-[#178D00]">
             {timeDigits.hours.map((digit, i) => (
               <motion.span
                 key={`h${i}-${digit}`}
