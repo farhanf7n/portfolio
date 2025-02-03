@@ -86,12 +86,12 @@ export function Introduction({
           className="flex flex-wrap gap-x-5 gap-y-3"
         >
           <a
-            aria-label="Twitter (or 𝕏)"
+            aria-label="Twitter (or X)"
             className="focusable text-twitter hover:text-twitter/50 hover:shadow-twitter/5 focus-visible:ring-twitter/40 dark:text-twitter-dark dark:hover:text-twitter-dark/50 dark:focus-visible:ring-twitter-dark/40 -ml-2.5 flex size-10 flex-none cursor-pointer items-center justify-center gap-2 rounded-full font-medium transition"
-            href="https://twitter.com/marcbouchenoire"
+            href="https://x.com/farhanf7n"
             rel="me noreferrer"
             target="_blank"
-            title="Twitter"
+            title="Twitter (or X)"
           >
             <svg
               className="[transform:scaleY(-1)]"
@@ -214,7 +214,7 @@ export function Introduction({
         </motion.div>
       </div>
 
-      <div className="my-10 flex scroll-mt-96 flex-col gap-4 text-center sm:mt-20">
+      <div className="mt-10 flex scroll-mt-96 flex-col gap-4 text-center sm:mt-20">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
