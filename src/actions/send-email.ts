@@ -15,9 +15,9 @@ export const sendEmail = async ({ name, email, message }: TFormSchema) => {
       subject: `Message from ${name} via contact form`,
       replyTo: email,
       text: `
-Name: ${name}
-Email: ${email}
-Message: ${message}
+      Name: ${name}
+      Email: ${email}
+      Message: ${message}
       `,
     });
 
