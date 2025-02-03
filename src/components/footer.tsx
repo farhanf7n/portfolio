@@ -180,7 +180,7 @@ export const Footer = () => {
           Designed and built by&nbsp;
           <Link
             className="underline"
-            href="https://github.com/farhanf7n"
+            href="https://www.linkedin.com/in/farhanf7n/"
             target="_blank"
           >
             Farhan Ahmed
