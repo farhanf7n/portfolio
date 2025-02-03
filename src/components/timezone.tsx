@@ -42,7 +42,7 @@ export function TimeZone({ className, ...props }: ComponentProps<'section'>) {
   }, []);
 
   return (
-    <section className={clsx(className, 'content')} {...props}>
+    <section className={clsx(className, '')} {...props}>
       <div className="mt-8 flex justify-between">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
