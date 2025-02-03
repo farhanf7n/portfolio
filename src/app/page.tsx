@@ -6,13 +6,11 @@ import { Footer } from '@/components/footer';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
 import { Projects } from '@/components/projects';
-import { SectionDivider } from '@/components/section-divider';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { Pricing } from '@/components/sections/pricing';
 import { Services } from '@/components/sections/services';
 import Testimonial from '@/components/sections/testimonial';
-import { ThreeImages } from '@/components/sections/threeImages';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -47,9 +45,6 @@ const Home = async () => {
         <Navbar />
         <Introduction />
         <Skills />
-        <SectionDivider />
-        <ThreeImages />
-        <SectionDivider />
         <Projects />
         <Services />
         <Testimonial />
