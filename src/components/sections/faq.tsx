@@ -49,7 +49,7 @@ const defaultData: FaqItem[] = [
   },
   {
     answer:
-      'Yes. I&apos;m based in Pakistan and have clients in the US, Germany, Canada, England, Australia, New Zealand, Italy, France, and Switzerland.',
+      'Yes. I am based in Pakistan and have clients in the US, Germany, Canada, England, Australia, New Zealand, Italy, France, and Switzerland.',
     icon: '🗺️',
     iconPosition: 'left',
     id: 5,
