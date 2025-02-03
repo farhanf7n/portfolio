@@ -43,7 +43,8 @@ export default function NotFound() {
               Oops!
             </h1>
             <p className="text-muted-foreground text-base">
-              Looks like we don&apos;t have what you are looking for.
+              You found a secret level! Just kidding, this page doesn&apos;t
+              exist. 👀
             </p>
           </div>
           <Image
