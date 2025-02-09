@@ -95,7 +95,7 @@ const generateLatestFilmWidget = cache(
               theme.colors.gray[dark ? '500' : '400']
             }; }`,
           ]),
-          s('g', { 'clip-path': 'url(#poster-mask)' }, [
+          s('g', { clipPath: 'url(#poster-mask)' }, [
             s('use', {
               id: 'poster-background',
               href: '#poster',
@@ -160,7 +160,7 @@ const generateLatestFilmWidget = cache(
                   id: 'rating-fill',
                   width: RATING_WIDTH * ((film.rating ?? 0) / 5),
                   height: RATING_HEIGHT,
-                  'clip-path': 'url(#rating-mask)',
+                  clipPath: 'url(#rating-mask)',
                 }),
               ]),
               film.rewatch

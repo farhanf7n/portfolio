@@ -79,7 +79,7 @@ const generateLatestSongWidget = cache(
             `#title { color: ${theme.colors.gray[dark ? '100' : '700']}; }`,
             `#artist { color: ${theme.colors.gray[dark ? '400' : '500']}; }`,
           ]),
-          s('g', { 'clip-path': 'url(#cover-mask)' }, [
+          s('g', { clipPath: 'url(#cover-mask)' }, [
             s('use', {
               id: 'cover-background',
               href: '#cover',
