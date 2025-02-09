@@ -208,7 +208,7 @@ const workExperience = [
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_4510_1016)">
+        <g clipPath="url(#clip0_4510_1016)">
           <rect width="43" height="43" fill="white" />
           <path
             d="M41.5 1.5V41.5H1.5V1.5H41.5ZM42.5 0.5H0.5V42.5H42.5V0.5Z"
