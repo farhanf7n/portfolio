@@ -9,9 +9,9 @@ import BlurFade from '@/components/magicui/blur-fade';
 import { Navbar } from '@/components/navbar';
 import { ProjectCard } from '@/components/project-card';
 import { SectionDivider } from '@/components/section-divider';
+import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { projectsData, uiWork } from '@/lib/data';
-import { Contact } from '@/components/sections/contact';
 
 const BLUR_FADE_DELAY = 0.04;
 
