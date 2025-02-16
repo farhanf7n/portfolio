@@ -118,7 +118,7 @@ const generateLatestFilmWidget = cache(
             s('use', {
               href: '#poster',
               stroke: dark ? 'rgb(255 255 255 / 8%)' : 'rgb(0 0 0 / 6%)',
-              'stroke-width': 2,
+              strokeWidth: 2,
             }),
           ]),
           s('g', { transform: `translate(${POSTER_WIDTH + PADDING}, 0)` }, [
@@ -171,7 +171,7 @@ const generateLatestFilmWidget = cache(
                       stroke: 'currentColor',
                       strokeLinecap: 'round',
                       strokeLinejoin: 'round',
-                      'stroke-width': 1.5,
+                      strokeWidth: 1.5,
                       transform: `translate(${RATING_WIDTH + 6}, 2)`,
                     },
                     [

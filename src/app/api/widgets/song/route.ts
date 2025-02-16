@@ -100,7 +100,7 @@ const generateLatestSongWidget = cache(
             s('use', {
               href: '#cover',
               stroke: dark ? 'rgb(255 255 255 / 8%)' : 'rgb(0 0 0 / 6%)',
-              'stroke-width': 2,
+              strokeWidth: 2,
             }),
           ]),
           s('g', { transform: `translate(${COVER_WIDTH + PADDING}, 0)` }, [
