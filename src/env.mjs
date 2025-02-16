@@ -6,10 +6,12 @@ export const env = createEnv({
     SITE_URL: z.string().url().optional(),
     GOOGLE_SITE_VERIFICATION_ID: z.string().min(1).optional(),
     RESEND_API_KEY: z.string().min(1).optional(),
+    NODE_ENV: z.enum(['development', 'production']).optional(),
   },
   runtimeEnv: {
     SITE_URL: process.env.SITE_URL,
     GOOGLE_SITE_VERIFICATION_ID: process.env.GOOGLE_SITE_VERIFICATION_ID,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
+    NODE_ENV: process.env.NODE_ENV,
   },
 });
