@@ -1,6 +1,7 @@
 import styles from './layout.module.css';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import clsx from 'clsx';
 
 import { Footer } from '@/components/footer';
@@ -54,6 +55,7 @@ const Home = async () => {
         <Contact />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
