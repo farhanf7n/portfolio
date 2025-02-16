@@ -12,6 +12,24 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 import { formSchema, TFormSchema } from '@/lib/form-schema';
 import { cn } from '@/lib/utils';
 
+const serviceOptions = [
+  'Web Development',
+  'Frontend Development',
+  'Full Stack Development',
+  'UI/UX Design',
+  'Consulting',
+];
+
+const sourceOptions = [
+  'Google',
+  'GitHub',
+  'LinkedIn',
+  'Twitter',
+  'Portfolio Website',
+  'Referral',
+  'Other',
+];
+
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');
   const {
@@ -22,21 +40,31 @@ export const Contact = () => {
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
   const onSubmit = async (values: TFormSchema) => {
+    console.log('Form values before submission:', values);
     const { data, error } = await sendEmail(values);
 
     if (error) {
+      console.error('Error sending email:', error);
       toast.error(error);
       return;
     }
 
+    console.log('Email sent successfully:', data);
     toast.success(data);
     reset();
+  };
+
+  const copyEmail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    navigator.clipboard
+      .writeText('farhanf7n@gmail.com')
+      .then(() => toast.success('Email copied to clipboard!'))
+      .catch(() => toast.error('Failed to copy email'));
   };
 
   return (
     <motion.section
       ref={ref}
-      id="contact"
       className="my-10 w-full max-w-xl"
       initial={{
         opacity: 0,
@@ -71,7 +99,11 @@ export const Contact = () => {
           variant="link"
           className="text-muted-foreground p-0 font-medium underline"
         >
-          <a className="underline-offset-4" href="mailto:farhanf7n@gmail.com">
+          <a
+            className="underline-offset-4"
+            href="mailto:farhanf7n@gmail.com"
+            onClick={copyEmail}
+          >
             farhanf7n@gmail.com
           </a>
         </Button>{' '}
@@ -132,6 +164,129 @@ export const Contact = () => {
             )}
           </div>
         </div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-2">
+          <div className="w-full sm:w-1/2">
+            <label
+              htmlFor="service"
+              className={cn(
+                'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+                errors.service?.message && 'text-destructive'
+              )}
+            >
+              What do you need?
+            </label>
+            <select
+              id="service"
+              {...register('service')}
+              className={cn(
+                'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+                errors.service?.message && 'border-destructive'
+              )}
+            >
+              <option value="">Select Service...</option>
+              {serviceOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+            {errors.service?.message && (
+              <p className="text-destructive mt-1 text-sm">
+                {errors.service?.message}
+              </p>
+            )}
+          </div>
+          <div className="w-full sm:w-1/2">
+            <label
+              htmlFor="source"
+              className={cn(
+                'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+                errors.source?.message && 'text-destructive'
+              )}
+            >
+              Where did you find me?
+            </label>
+            <select
+              id="source"
+              {...register('source')}
+              className={cn(
+                'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+                errors.source?.message && 'border-destructive'
+              )}
+            >
+              <option value="">Select Option...</option>
+              {sourceOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+            {errors.source?.message && (
+              <p className="text-destructive mt-1 text-sm">
+                {errors.source?.message}
+              </p>
+            )}
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-2">
+          <div className="w-full sm:w-1/2">
+            <label
+              htmlFor="budget"
+              className={cn(
+                'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+                errors.budget?.message && 'text-destructive'
+              )}
+            >
+              Budget
+            </label>
+            <input
+              type="number"
+              id="budget"
+              min="1"
+              step="1"
+              placeholder="Enter budget in USD"
+              {...register('budget', {
+                setValueAs: (value) =>
+                  value === '' ? undefined : parseInt(value, 10),
+              })}
+              className={cn(
+                'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+                errors.budget?.message && 'border-destructive'
+              )}
+            />
+            {errors.budget?.message && (
+              <p className="text-destructive mt-1 text-sm">
+                {errors.budget?.message}
+              </p>
+            )}
+          </div>
+          <div className="w-full sm:w-1/2">
+            <label
+              htmlFor="country"
+              className={cn(
+                'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+                errors.country?.message && 'text-destructive'
+              )}
+            >
+              Country
+            </label>
+            <input
+              type="text"
+              id="country"
+              placeholder="Write country name"
+              {...register('country')}
+              className={cn(
+                'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+                errors.country?.message && 'border-destructive'
+              )}
+            />
+            {errors.country?.message && (
+              <p className="text-destructive mt-1 text-sm">
+                {errors.country?.message}
+              </p>
+            )}
+          </div>
+        </div>
         <div className="w-full max-w-xl">
           <label
             htmlFor="message"
@@ -140,7 +295,7 @@ export const Contact = () => {
               errors.message?.message && 'text-destructive'
             )}
           >
-            Message
+            Project Brief
           </label>
           <textarea
             id="message"
