@@ -2,6 +2,8 @@
 import styles from '../layout.module.css';
 
 import { Fragment } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -10,6 +12,7 @@ import { CompanyPanel } from '@/components/CompanyPanel';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import { Activity } from '@/components/sections/Activity';
+import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { HoverTooltip } from '@/components/ui/hover-tooltip';
 
@@ -267,8 +270,8 @@ const workExperience = [
         <path
           d="M9.44843 8.43213C9.89663 8.95873 10.8075 9.611 10.6454 9.92067M10.6454 9.92067C10.7357 10.2365 9.85383 10.8607 9.44643 11.3368M10.6454 9.92067C8.8085 9.95853 7.68463 9.748 6.59979 8.7246C5.46991 7.65873 5.25961 6.50843 5.35105 4.66309"
           stroke="#122625"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
@@ -311,8 +314,8 @@ const workExperience = [
         <path
           d="M9.44843 8.43213C9.89663 8.95873 10.8075 9.611 10.6454 9.92067M10.6454 9.92067C10.7357 10.2365 9.85383 10.8607 9.44643 11.3368M10.6454 9.92067C8.8085 9.95853 7.68463 9.748 6.59979 8.7246C5.46991 7.65873 5.25961 6.50843 5.35105 4.66309"
           stroke="#122625"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
@@ -553,8 +556,10 @@ export default function Page() {
 
         {/* Activity */}
         <Activity />
-
+        <Contact />
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
