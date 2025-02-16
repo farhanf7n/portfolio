@@ -17,7 +17,7 @@ export type FaqItem = {
 const defaultData: FaqItem[] = [
   {
     answer:
-      'My focus is on Webflow development of marketing websites based on screen designs. Additionally, I offer consulting services during your design phase.',
+      'I craft stunning UI designs and develop high-performing websites from scratch. Whether you need a sleek landing page, a fully custom web app, or expert design and development consulting—I’ve got you covered. With a deep understanding of Vanilla JS, React, Next.js, and Node.js, I build seamless, scalable, and visually striking digital experiences.',
     icon: '🗃️',
     iconPosition: 'left',
     id: 1,
@@ -25,7 +25,7 @@ const defaultData: FaqItem[] = [
   },
   {
     answer:
-      'No. I&nbsp;like to get involved early in the process to ensure a smooth workflow between design &amp; development and to identify potential difficulties from the dev-end.',
+      'No. I like to get involved early in the process to ensure a smooth workflow between design & development and to identify potential difficulties from the dev-end.',
     icon: '🗾',
     iconPosition: 'right',
     id: 2,
@@ -83,7 +83,7 @@ const defaultData: FaqItem[] = [
 function Faq() {
   const { ref } = useSectionInView('FAQ');
   return (
-    <section ref={ref} id="faq" className="my-10 w-full max-w-xl sm:mt-20">
+    <section ref={ref} className="my-10 w-full max-w-xl sm:mt-20">
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
