@@ -12,6 +12,12 @@ import { SectionDivider } from '@/components/section-divider';
 import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { projectsData, uiWork } from '@/lib/data';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Services } from '@/components/sections/services';
+import { Faq } from '@/components/sections/faq';
+import Testimonial from '@/components/sections/testimonial';
+import { Pricing } from '@/components/sections/pricing';
+import { Analytics } from '@vercel/analytics/react';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -140,9 +146,14 @@ export default function Page() {
           </BlurFade>
         </div>
 
+        <Services />
+        <Testimonial />
+        <Pricing />
+        <Faq />
         <Contact />
-
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </div>
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
