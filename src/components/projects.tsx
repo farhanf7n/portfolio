@@ -13,7 +13,6 @@ import {
 import { ProjectCard } from '@/components/project-card';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 import { projectsData, uiWork } from '@/lib/data';
-
 const BLUR_FADE_DELAY = 0.04;
 
 export const Projects = () => {
@@ -23,7 +22,6 @@ export const Projects = () => {
     <>
       <section
         ref={ref}
-        id="home"
         className="my-10 flex w-full max-w-xl scroll-mt-96 flex-col gap-4 sm:mt-20"
       >
         <motion.h1
