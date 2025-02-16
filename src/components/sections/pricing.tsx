@@ -16,11 +16,7 @@ export const Pricing = () => {
   const { ref } = useSectionInView('Pricing');
 
   return (
-    <section
-      ref={ref}
-      id="pricing"
-      className="my-10 flex w-full max-w-xl scroll-mt-96 flex-col gap-4 sm:mt-20"
-    >
+    <section className="my-10 flex w-full max-w-xl scroll-mt-96 flex-col gap-4 sm:mt-20">
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
