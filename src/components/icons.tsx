@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Briefcase,
   ChevronDown,
+  ChevronUp,
   Cog,
   Download,
   Dribbble,
@@ -462,4 +463,5 @@ export const Icons = {
       </defs>
     </svg>
   ),
+  chevronUp: ChevronUp,
 };
