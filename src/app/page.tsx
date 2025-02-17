@@ -1,3 +1,4 @@
+'use client';
 import styles from './layout.module.css';
 
 import { Analytics } from '@vercel/analytics/react';
@@ -57,7 +58,7 @@ const Home = async () => {
         <Analytics />
         <SpeedInsights />
       </div>
-      <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
+      <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex border border-border" />
     </>
   );
 };
