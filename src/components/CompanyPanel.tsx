@@ -37,7 +37,7 @@ export function CompanyPanel({
   return (
     <FloatingPanelRoot>
       <FloatingPanelTrigger className={className} title={company}>
-        <span className="flex items-center gap-2">
+        <span className="flex items-center gap-2 text-xs font-normal">
           {logo}
           {company}
         </span>

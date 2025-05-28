@@ -53,7 +53,7 @@ export function ThemeToggle({ className, ...props }: ComponentProps<'button'>) {
         aria-label="Toggle Theme"
         className={clsx(
           className,
-          'focusable rounded-md bg-transparent p-1.5 transition hover:bg-gray-500/10 dark:hover:bg-gray-400/20'
+          'focusable rounded-md bg-transparent p-1.5 border border-border transition hover:bg-gray-500/10 dark:hover:bg-gray-400/20'
         )}
         onClick={toggleTheme}
         {...props}

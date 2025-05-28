@@ -47,7 +47,7 @@ export default function TestimonialColumn({
                   alt={`${testimonial.name} avatar`}
                   width={40}
                   height={40}
-                  className="size-10 rounded-full object-center"
+                  className="size-10 rounded-full object-center object-cover"
                 />
                 <div>
                   <cite className="text-sm font-medium not-italic">

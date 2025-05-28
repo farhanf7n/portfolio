@@ -33,7 +33,7 @@ export function Introduction({
           >
             <Image
               alt="Farhan Ahmed"
-              className="pointer-events-none absolute inset-0 size-full -rotate-6 overflow-hidden rounded-lg object-cover"
+              className="pointer-events-none absolute inset-0 size-full overflow-hidden rounded-full object-cover"
               priority
               quality={100}
               src={portrait}
@@ -209,7 +209,7 @@ export function Introduction({
             <span className="relative inline-flex size-2 rounded-full bg-[#00CA50]"></span>
           </span>
           <span className="text-muted-foreground text-sm text-[#178D00] dark:text-[#00ac3a]">
-            Available for new project
+            Available For Freelance Work
           </span>
         </motion.div>
       </div>
