@@ -27,7 +27,7 @@ export default function TestimonialColumn({
         y: reverse ? 0 : '-50%',
       }}
       transition={{
-        duration: 65,
+        duration: 120, //65
         repeat: Infinity,
         ease: 'linear',
       }}
