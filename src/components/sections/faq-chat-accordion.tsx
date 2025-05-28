@@ -80,7 +80,7 @@ export function FaqAccordion({
                       {item.icon}
                     </span>
                   )}
-                  <span className="text-base font-medium tracking-tight">
+                  <span className="text-base text-left font-medium tracking-tight">
                     {item.question}
                   </span>
                 </div>
