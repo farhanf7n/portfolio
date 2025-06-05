@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { CompanyPanel } from '@/components/CompanyPanel';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
+import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import { Activity } from '@/components/sections/Activity';
 import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -573,6 +574,7 @@ export default function Page() {
         <Analytics />
         <SpeedInsights />
       </div>
+      <ScrollProgressIndicator />
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
   );

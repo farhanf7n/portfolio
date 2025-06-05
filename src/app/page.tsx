@@ -8,7 +8,9 @@ import clsx from 'clsx';
 import { Footer } from '@/components/footer';
 import { Introduction } from '@/components/Introduction';
 import { Navbar } from '@/components/navbar';
+import Preloader from '@/components/Preloader';
 import { Projects } from '@/components/projects';
+import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { Pricing } from '@/components/sections/pricing';
@@ -44,6 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ScrollProgressIndicator />
       <div className="container relative flex flex-col items-center">
         <Navbar />
         <Introduction />
@@ -58,7 +61,8 @@ const Home = () => {
         <Analytics />
         <SpeedInsights />
       </div>
-      <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex border border-border" />
+      <Preloader />
+      <ThemeToggle className="border-border fixed bottom-5 right-5 hidden border sm:bottom-8 sm:right-8 sm:flex" />
     </>
   );
 };

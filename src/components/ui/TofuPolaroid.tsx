@@ -118,7 +118,7 @@ export function TofuPolaroid({
       }}
       className={clsx(
         className,
-        'absolute z-50 aspect-[328/400] cursor-grab touch-none bg-white p-2 shadow-floaty will-change-transform'
+        'absolute z-[99] aspect-[328/400] cursor-grab touch-none bg-white p-2 shadow-floaty will-change-transform'
       )}
       drag={!isAnimating}
       dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

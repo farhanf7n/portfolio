@@ -19,7 +19,7 @@ export function Introduction({
   ...props
 }: ComponentProps<'section'>) {
   return (
-    <section className={clsx(className, 'content py-14')} {...props}>
+    <section className={clsx(className, 'content py-14 relative')} {...props}>
       <div className="flex flex-row items-center gap-7">
         <div className="relative size-[80px]">
           <motion.div

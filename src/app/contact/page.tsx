@@ -4,12 +4,14 @@ import styles from '../layout.module.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
+import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { motion } from 'framer-motion';
+
 const ContactPage = async () => {
   return (
     <>
@@ -165,6 +167,7 @@ const ContactPage = async () => {
         <Analytics />
         <SpeedInsights />
       </div>
+      <ScrollProgressIndicator />
       <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
     </>
   );

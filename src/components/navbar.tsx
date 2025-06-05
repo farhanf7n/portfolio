@@ -24,7 +24,7 @@ export const Navbar = () => {
       <motion.header
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-secondary/80 sticky top-5 z-[9999] my-5 flex items-center justify-between gap-1 rounded-xl p-[6px] backdrop-blur-sm border border-border sm:top-10 sm:my-10"
+        className="bg-secondary/80 border-border sticky top-5 z-[9999] my-5 flex items-center justify-between gap-1 rounded-xl border p-[6px] backdrop-blur-sm sm:top-10 sm:my-10"
       >
         <nav className="text-muted-foreground text-sm">
           <div className="flex gap-3">

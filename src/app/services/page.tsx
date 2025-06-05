@@ -6,6 +6,7 @@ import clsx from 'clsx';
 
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
+import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { Pricing } from '@/components/sections/pricing';
@@ -45,6 +46,7 @@ const Home = async () => {
         <Navbar />
         <Services />
         <Skills />
+        <ScrollProgressIndicator />
         <Pricing />
         <Testimonial />
         <Faq />
