@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 export interface Logo {
   name: string;
   id: number;
-  img: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+  img: (props: import('lucide-react').LucideProps) => JSX.Element;
 }
 
 interface LogoColumnProps {

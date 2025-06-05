@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 import { LogoCarousel } from './LogoCarousel';
 
-import { skillsData } from '@/lib/data';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
+import { skillsData } from '@/lib/data';
 
 export const Skills = () => {
   const isMobile = useBreakpoint(640); // 640px is Tailwind's 'sm' breakpoint
