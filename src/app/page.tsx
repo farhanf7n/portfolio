@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import styles from './layout.module.css';
 
 import { Analytics } from '@vercel/analytics/react';
@@ -17,7 +17,7 @@ import Testimonial from '@/components/sections/testimonial';
 import { Skills } from '@/components/skills';
 import { ThemeToggle } from '@/components/theme-toggle';
 
-const Home = async () => {
+const Home = () => {
   return (
     <>
       <div className="pointer-events-none absolute top-0 h-72 w-full overflow-hidden md:h-80 lg:h-96">

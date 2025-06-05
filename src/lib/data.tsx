@@ -558,18 +558,102 @@ export const pricingData = [
 ] as const;
 
 export const skillsData = [
-  { icon: <Icons.html className="size-12" /> },
-  { icon: <Icons.css className="size-12" /> },
-  { icon: <Icons.sass className="size-12" /> },
-  { icon: <Icons.tailwind className="size-12" /> },
-  { icon: <Icons.javascript className="size-12" /> },
-  { icon: <Icons.typescript className="size-12" /> },
-  { icon: <Icons.react className="size-12" /> },
-  { icon: <Icons.redux className="size-12" /> },
-  { icon: <Icons.nextjs className="size-12" /> },
-  { icon: <Icons.nestjs className="size-12" /> },
-  { icon: <Icons.prisma className="size-12" /> },
-  { icon: <Icons.docker className="size-12" /> },
-  { icon: <Icons.figma className="size-12" /> },
-  { icon: <Icons.xd className="size-12" /> },
+  {
+    name: 'HTML',
+    id: 0,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.html {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'CSS',
+    id: 1,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.css {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Sass',
+    id: 2,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.sass {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Tailwind',
+    id: 3,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.tailwind {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'JavaScript',
+    id: 4,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.javascript {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'TypeScript',
+    id: 5,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.typescript {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'React',
+    id: 6,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.react {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Redux',
+    id: 7,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.redux {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Next.js',
+    id: 8,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.nextjs {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'NestJS',
+    id: 9,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.nestjs {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Prisma',
+    id: 10,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.prisma {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Docker',
+    id: 11,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.docker {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'Figma',
+    id: 12,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.figma {...props} className="size-12" />
+    ),
+  },
+  {
+    name: 'XD',
+    id: 13,
+    img: (props: import('lucide-react').LucideProps) => (
+      <Icons.xd {...props} className="size-12" />
+    ),
+  },
 ] as const;
