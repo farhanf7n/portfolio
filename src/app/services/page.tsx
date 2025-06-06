@@ -55,7 +55,7 @@ const Home = async () => {
         <Analytics />
         <SpeedInsights />
       </div>
-      <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
+      <ThemeToggle className="fixed bottom-5 right-5  sm:bottom-8 sm:right-8 flex" />
     </>
   );
 };

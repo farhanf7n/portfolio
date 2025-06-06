@@ -53,7 +53,7 @@ export function ThemeToggle({ className, ...props }: ComponentProps<'button'>) {
         aria-label="Toggle Theme"
         className={clsx(
           className,
-          'focusable rounded-md bg-transparent p-1.5 border border-border transition hover:bg-gray-500/10 dark:hover:bg-gray-400/20'
+          'focusable rounded-md bg-background text-foreground hover:bg-muted p-1.5 border border-border transition dark:hover:bg-gray-400/20'
         )}
         onClick={toggleTheme}
         {...props}
@@ -94,10 +94,10 @@ export function ThemeToggle({ className, ...props }: ComponentProps<'button'>) {
 
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-5 right-5 hidden rounded-md border border-border bg-background p-2 text-foreground transition-colors hover:bg-muted sm:bottom-20 sm:right-8 sm:flex"
+        className="border-border bg-background text-foreground hover:bg-muted fixed bottom-16 right-5 flex rounded-md border p-2 transition-colors sm:bottom-20 sm:right-8"
         aria-label="Scroll to top"
       >
-        <Icons.chevronUp className="h-5 w-5" />
+        <Icons.chevronUp className="size-5" />
       </button>
     </>
   );

@@ -168,7 +168,7 @@ const ContactPage = async () => {
         <SpeedInsights />
       </div>
       <ScrollProgressIndicator />
-      <ThemeToggle className="fixed bottom-5 right-5 hidden sm:bottom-8 sm:right-8 sm:flex" />
+      <ThemeToggle className="fixed bottom-12 right-5" />
     </>
   );
 };
