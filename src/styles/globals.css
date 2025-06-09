@@ -356,3 +356,15 @@ blockquote cite {
 .dark blockquote cite {
   color: #e8ff85;
 }
+
+@font-face {
+  font-family: 'FoundersGroteskBold';
+  src: url('../../public/fonts/FoundersGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.font-founders-bold {
+  font-family: 'FoundersGroteskBold', sans-serif;
+  font-weight: bold;
+}

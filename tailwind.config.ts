@@ -22,6 +22,11 @@ const config = {
     },
     extend: {
       keyframes: {
+        'grow-bar': {
+          '0%': { height: '0px' },
+          '50%': { height: '100px' },
+          '100%': { height: '0px' },
+        },
         blink: {
           '0%, 100%': { opacity: '1', easing: 'circOut' },
           '50%': { opacity: '0', easing: 'circOut' },
@@ -99,6 +104,7 @@ const config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       animation: {
+        'grow-bar': 'grow-bar 2s ease-in-out infinite',
         blink: 'blink 1s infinite',
       },
     },
