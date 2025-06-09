@@ -384,10 +384,10 @@ export default function Page() {
         <section className="mb-8 flex w-full flex-col pb-4 md:mb-4 lg:mb-12 lg:flex-row">
           <div className="w-full lg:mx-auto">
             <div className="relative h-40 w-full lg:h-48">
-              <div className="group absolute inset-0 left-1/2 mx-auto w-full max-w-xl -translate-x-1/2 rounded-2xl bg-neutral-100 bg-[url('/mallPicture.png')] bg-position-[0px -70px] bg-cover bg-no-repeat bg-top lg:ml-0">
+              <div className="bg-position-[0px -70px] group absolute inset-0 left-1/2 mx-auto w-full max-w-xl -translate-x-1/2 rounded-2xl bg-neutral-100 bg-[url('/mallPicture.png')] bg-cover bg-top bg-no-repeat lg:ml-0">
                 {/* Video shown on hover */}
                 <video
-                  className="absolute inset-0 h-full w-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 size-full rounded-2xl object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                   src="/weather.mov"
                   autoPlay
                   loop
@@ -400,7 +400,7 @@ export default function Page() {
                     src="/ghibli-dp.png"
                     width={96}
                     height={96}
-                    className="object-top border-light-neutral ml-9 aspect-square w-24 rounded-full border-4 object-cover dark:border-black"
+                    className="border-light-neutral ml-9 aspect-square w-24 rounded-full border-4 object-cover object-top dark:border-black"
                     alt="Profile picture"
                   />
                 </div>
@@ -470,10 +470,10 @@ export default function Page() {
                   key={index}
                   className={`flex items-center gap-4 py-3 opacity-100`}
                 >
-                  <span className="text-xs sm:text-base w-24 sm:w-32 dark:text-neutral-400">
+                  <span className="w-24 text-xs sm:w-32 sm:text-base dark:text-neutral-400">
                     {exp.year}
                   </span>
-                  <span className="text-xs sm:text-base font-normal dark:text-neutral-400">
+                  <span className="text-xs font-normal sm:text-base dark:text-neutral-400">
                     {exp.title} at
                   </span>
                   <CompanyPanel
