@@ -12,6 +12,7 @@ import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import { Contact } from '@/components/sections/contact';
 import { ThemeToggle } from '@/components/theme-toggle';
 
+// eslint-disable-next-line @next/next/no-async-client-component
 const ContactPage = async () => {
   return (
     <>
@@ -168,7 +169,7 @@ const ContactPage = async () => {
         <SpeedInsights />
       </div>
       <ScrollProgressIndicator />
-      <ThemeToggle className="fixed bottom-5 right-5 sm:bottom-8 sm:right-8 flex" />
+      <ThemeToggle className="fixed bottom-5 right-5 flex sm:bottom-8 sm:right-8" />
     </>
   );
 };

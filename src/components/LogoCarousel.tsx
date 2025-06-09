@@ -70,11 +70,10 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
           <motion.div
             key={`${logos[currentIndex].id}-${currentIndex}`}
             className="absolute inset-0 flex items-center justify-center"
-            initial={{ y: '10%', opacity: 0, blurAmount: 8 }}
+            initial={{ y: '10%', opacity: 0 }}
             animate={{
               y: '0%',
               opacity: 1,
-              blurAmount: 0,
               transition: {
                 type: 'spring',
                 stiffness: 300,
@@ -87,16 +86,11 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
             exit={{
               y: '-20%',
               opacity: 0,
-              blurAmount: 6,
               transition: {
                 type: 'tween',
                 ease: 'easeIn',
                 duration: 0.3,
               },
-            }}
-            style={{
-              filter: (latest) =>
-                `blur(${Math.max(0, latest.blurAmount ?? 0)}px)`,
             }}
           >
             <CurrentLogo className="size-20 max-h-[80%] max-w-[80%] object-contain md:size-32" />
