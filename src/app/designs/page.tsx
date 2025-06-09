@@ -61,7 +61,6 @@ export default function Page() {
             Good design is{' '}
             <span className="font-bold dark:text-[#e8ff85]">invisible.</span>
           </motion.h1>
-          <h1>Good design is invisible.</h1>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -77,53 +76,11 @@ export default function Page() {
 
         <SectionDivider />
 
-        <div className="flex w-full max-w-xl flex-col gap-4">
-          <motion.h1
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-4 text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
-          >
-            <span className="font-bold dark:text-[#e8ff85]">Projects</span>
-          </motion.h1>
-
-          {/* All Projects */}
-          <BlurFade delay={BLUR_FADE_DELAY}>
-            <div className="w-full space-y-12">
-              <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-4 sm:grid-cols-2">
-                {projectsData.map((projectsData, id) => (
-                  <BlurFade
-                    key={projectsData.title}
-                    delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-                  >
-                    <ProjectCard
-                      href={projectsData.href}
-                      key={projectsData.title}
-                      title={projectsData.title}
-                      description={projectsData.description}
-                      tags={projectsData.technologies}
-                      image={projectsData.image}
-                      video={projectsData.video}
-                      links={projectsData.links}
-                    />
-                  </BlurFade>
-                ))}
-              </div>
-            </div>
-          </BlurFade>
-
-          <SectionDivider />
-
-          <motion.h1
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-4 text-left text-3xl font-bold leading-tight tracking-tighter sm:text-4xl"
-          >
-            Ui <span className="font-bold dark:text-[#e8ff85]">Designs</span>
-          </motion.h1>
+        <div className="flex w-full flex-col gap-4">
           {/* UI Designs */}
           <BlurFade delay={BLUR_FADE_DELAY}>
             <div className="w-full space-y-12">
-              <div className="mx-auto mt-2 grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="mx-auto mt-2 grid max-w-7xl grid-cols-1 gap-3 sm:grid-cols-3">
                 {uiWork.map((project, id) => (
                   <BlurFade
                     key={project.title}
