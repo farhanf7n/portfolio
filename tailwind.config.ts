@@ -12,6 +12,7 @@ const config = {
   theme: {
     fontFamily: {
       sans: ['var(--font-sans)'],
+      heading: ['ClashDisplay', 'sans-serif'],
     },
     container: {
       center: true,
