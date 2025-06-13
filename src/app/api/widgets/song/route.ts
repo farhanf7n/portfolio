@@ -283,5 +283,11 @@ export async function GET(request: NextRequest) {
           'Content-Type': 'image/svg+xml',
         },
       })
-    : new Response(undefined, { status: 500 });
+    : new Response(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="380" height="80"></svg>',
+        {
+          status: 500,
+          headers: { 'Content-Type': 'image/svg+xml' },
+        }
+      );
 }

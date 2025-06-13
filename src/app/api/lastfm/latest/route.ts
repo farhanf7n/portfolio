@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   const limit = searchParams.has('limit')
     ? Number(searchParams.get('limit'))
-    : undefined;
+    : 10; // Default limit value
 
   const songs = await getLatestSongs(limit);
 
