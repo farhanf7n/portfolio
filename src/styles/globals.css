@@ -368,3 +368,36 @@ blockquote cite {
   font-family: 'FoundersGroteskBold', sans-serif;
   font-weight: bold;
 }
+
+.star-cta {
+  color: #c6fb50;
+  width: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+  animation: rotateStar 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; /* In-Out Quad */
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateZ(90deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  75% {
+    transform: rotateZ(270deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+
+  0% {
+    transform: rotateZ(0deg);
+    transition: transform 0s;
+  }
+}

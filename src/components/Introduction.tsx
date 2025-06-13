@@ -204,10 +204,20 @@ export function Introduction({
           }}
           className="flex items-center gap-2 rounded-md px-4 py-2 pl-0 sm:backdrop-blur-sm"
         >
-          <span className="relative flex size-2">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#00AC3A]"></span>
-            <span className="relative inline-flex size-2 rounded-full bg-[#00CA50]"></span>
-          </span>
+          <div className="star-cta">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 20 21"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.3931 5.08672L10 0.5L7.60692 5.08672C6.44222 7.32274 3.72157 9.25299 0 10.5C3.73066 11.747 6.44222 13.6773 7.60692 15.9133L10 20.5L12.3931 15.9133C13.5578 13.6773 16.2784 11.747 20 10.5C16.2784 9.25299 13.5578 7.32274 12.3931 5.08672Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
           <span className="text-muted-foreground text-sm text-[#178D00] dark:text-[#00ac3a]">
             Available For Freelance Work
           </span>
