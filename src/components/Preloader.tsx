@@ -1,7 +1,10 @@
 'use client';
+import 'ldrs/react/TailChase.css';
+
 import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { TailChase } from 'ldrs/react';
 
 gsap.registerPlugin(useGSAP);
 
@@ -42,6 +45,8 @@ const Preloader = () => {
 
   return (
     <div className="fixed inset-0 z-[99999] flex" ref={preloaderRef}>
+      <div className="absolute inset-0 z-0 bg-black/40 backdrop-blur-lg" />
+      {/* <div className="preloader-item h-full w-[10%] bg-black"></div>
       <div className="preloader-item h-full w-[10%] bg-black"></div>
       <div className="preloader-item h-full w-[10%] bg-black"></div>
       <div className="preloader-item h-full w-[10%] bg-black"></div>
@@ -50,17 +55,22 @@ const Preloader = () => {
       <div className="preloader-item h-full w-[10%] bg-black"></div>
       <div className="preloader-item h-full w-[10%] bg-black"></div>
       <div className="preloader-item h-full w-[10%] bg-black"></div>
-      <div className="preloader-item h-full w-[10%] bg-black"></div>
-      <div className="preloader-item h-full w-[10%] bg-black"></div>
+      <div className="preloader-item h-full w-[10%] bg-black"></div> */}
 
-      <p className="name-text font-founders-bold absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 overflow-hidden text-center text-[20vw] font-black leading-none text-white lg:text-[200px]">
+      <div
+        className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 overflow-hidden text-center"
+        ref={preloaderRef}
+      >
+        <TailChase size="40" speed="1.75" color="white" />
+      </div>
+      {/* <p className="name-text font-founders-bold absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 overflow-hidden text-center text-[20vw] font-black leading-none text-white lg:text-[200px]">
         <span className="inline-block translate-y-full">F</span>
         <span className="inline-block translate-y-full">A</span>
         <span className="inline-block translate-y-full">R</span>
         <span className="inline-block translate-y-full">H</span>
         <span className="inline-block translate-y-full">A</span>
         <span className="inline-block translate-y-full">N</span>
-      </p>
+      </p> */}
     </div>
   );
 };
