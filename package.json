@@ -36,7 +36,7 @@
     "hast-util-to-html": "^9.0.4",
     "hastscript": "^9.0.0",
     "html-entities": "^2.5.2",
-    "ldrs": "^1.0.2",
+    "ldrs": "^1.1.7",
     "lucide-react": "^0.439.0",
     "motion": "^11.17.0",
     "next": "14.2.8",
