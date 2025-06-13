@@ -3,9 +3,9 @@ import { s } from 'hastscript';
 import { unstable_cache as cache } from 'next/cache';
 import type { NextRequest } from 'next/server';
 
-import { getLatestSongs } from '../../lastfm/latest/get-latest-songs';
 import theme from '../theme.json';
 
+import { getLatestSongs } from '@/app/api/lastfm/latest/get-latest-songs';
 import { encodeImage } from '@/lib/encode-image';
 import { formatRelativeDate } from '@/lib/format-relative-date';
 import { truncate } from '@/lib/truncate';
@@ -28,7 +28,7 @@ const ICON_SIZE = 20;
  */
 const generateLatestSongWidget = cache(
   async (dark?: boolean) => {
-    const [song] = await getLatestSongs();
+    const [song] = await getLatestSongs(1);
 
     if (song) {
       const cover = song.cover ? await encodeImage(song.cover) : undefined;
